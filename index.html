@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1d2433">
+<meta name="description" content="分詞・分詞構文／比較の解説と問題集">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="英文法9-10">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>英文法 教科書＋問題集 Lesson 9–10（分詞・分詞構文／比較）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f7f3ea; --card:#fffdf8; --ink:#1d2433; --sub:#5b6476; --line:#e3dccb;
+  --l9:#0f7c74; --l9-soft:#e2f2ef; --l10:#c2681b; --l10-soft:#fbeedd;
+  --rev:#5a4bb3; --rev-soft:#ece9fa;
+  --ok:#1f8a4c; --ok-soft:#e3f5ea; --ng:#c8372d; --ng-soft:#fbe6e3;
+  --accent:var(--l9); --accent-soft:var(--l9-soft);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}
+.en{font-family:"Source Serif 4",Georgia,serif;font-size:1.06em;letter-spacing:.005em}
+header.top{position:sticky;top:0;z-index:20;background:rgba(247,243,234,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-inner{max-width:980px;margin:0 auto;padding:calc(12px + env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) 0 max(20px,env(safe-area-inset-left))}
+.install{display:none;font-size:.78rem;font-weight:700;padding:4px 12px;border-radius:999px;border:none;background:var(--ink);color:#fff;cursor:pointer;margin-left:8px}
+.install.on{display:inline-block}
+body{padding-bottom:env(safe-area-inset-bottom)}
+.brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brand h1{font-size:1.15rem;margin:0;font-weight:900;letter-spacing:.02em}
+.brand .meta{color:var(--sub);font-size:.85rem}
+.overall{margin-left:auto;font-size:.85rem;color:var(--sub)}
+.overall b{color:var(--ink)}
+nav.tabs{display:flex;gap:4px;overflow-x:auto;margin-top:10px;scrollbar-width:none}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs a{flex:none;text-decoration:none;color:var(--sub);font-weight:700;font-size:.9rem;padding:8px 14px 10px;border-radius:10px 10px 0 0;border:1px solid transparent;border-bottom:none;white-space:nowrap}
+nav.tabs a .tg{display:inline-block;font-size:.7rem;font-weight:900;padding:1px 6px;border-radius:5px;margin-right:6px;color:#fff;vertical-align:1px}
+nav.tabs a.on{background:var(--card);color:var(--ink);border-color:var(--line);position:relative;top:1px}
+.tg9{background:var(--l9)}.tg10{background:var(--l10)}.tgR{background:var(--rev)}
+main{max-width:980px;margin:0 auto;padding:28px 20px 80px}
+.view{display:none}.view.on{display:block}
+.hero{border-radius:18px;padding:26px 28px;background:var(--accent);color:#fff;margin-bottom:26px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-40px;top:-40px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.09)}
+.hero .kicker{font-size:.8rem;font-weight:700;opacity:.85;letter-spacing:.08em}
+.hero h2{margin:4px 0 6px;font-size:1.7rem;font-weight:900;line-height:1.35}
+.hero p{margin:0;opacity:.92;font-size:.95rem}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:-8px 0 26px}
+.toc a{font-size:.85rem;text-decoration:none;color:var(--accent);background:var(--accent-soft);padding:4px 12px;border-radius:999px;font-weight:700}
+section.kp{margin:0 0 40px}
+.kp-head{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.kp-num{background:var(--ink);color:#fff;font-weight:900;font-size:.85rem;padding:3px 10px;border-radius:6px}
+.kp-head h3{margin:0;font-size:1.3rem;font-weight:900}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+.card h4{margin:0 0 10px;font-size:1.05rem;font-weight:900;display:flex;gap:8px;align-items:center}
+.card h4::before{content:"";width:6px;height:18px;border-radius:3px;background:var(--accent);flex:none}
+.point{background:var(--accent-soft);border-left:4px solid var(--accent);padding:10px 14px;border-radius:0 10px 10px 0;margin:10px 0;font-weight:500}
+.point b{color:var(--accent)}
+.ex{list-style:none;margin:10px 0;padding:0}
+.ex li{padding:9px 12px;border-radius:10px;cursor:pointer;transition:background .15s}
+.ex li:hover{background:#f3eee2}
+.ex .s mark{background:none;color:var(--accent);font-weight:600;border-bottom:2px solid var(--accent)}
+.ex .t{display:block;color:var(--sub);font-size:.9rem;max-height:0;overflow:hidden;transition:max-height .2s}
+.ex li.open .t{max-height:120px}
+.ex .hint{font-size:.72rem;color:var(--sub);opacity:.7;margin-left:6px}
+.ex li.open .hint{display:none}
+table.tb{border-collapse:collapse;width:100%;margin:10px 0;font-size:.93rem}
+.tb th,.tb td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+.tb th{background:#f1ebdd;font-weight:700;white-space:nowrap}
+.note{font-size:.88rem;color:var(--sub);margin:8px 0 0;padding-left:1.2em;text-indent:-1.2em}
+.note::before{content:"※ "}
+.formula{font-weight:700;background:#fff;border:1px dashed var(--accent);border-radius:8px;padding:6px 12px;display:inline-block;margin:4px 0}
+.go-drill{display:flex;justify-content:space-between;align-items:center;gap:14px;background:var(--ink);color:#fff;border-radius:14px;padding:18px 22px;text-decoration:none;margin-top:10px}
+.go-drill span{font-weight:900}
+.go-drill small{opacity:.75}
+
+/* drills */
+.drill-sec{margin:0 0 40px}
+.sec-bar{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.sec-bar h3{margin:0;font-size:1.25rem;font-weight:900}
+.sec-bar .lvl{font-size:.75rem;font-weight:900;padding:2px 8px;border-radius:6px;background:var(--accent-soft);color:var(--accent)}
+.sec-bar .score{margin-left:auto;font-size:.85rem;color:var(--sub)}
+.sec-bar .score b{color:var(--ink)}
+.sec-bar button.reset{font-size:.78rem}
+.pbar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:16px}
+.pbar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:12px;position:relative}
+.q.ok{border-color:var(--ok);box-shadow:inset 4px 0 0 var(--ok)}
+.q.ng{border-color:var(--ng);box-shadow:inset 4px 0 0 var(--ng)}
+.q-top{display:flex;gap:10px;align-items:flex-start}
+.qn{flex:none;width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;font-weight:900;font-size:.85rem;display:grid;place-items:center;margin-top:1px}
+.q-body{flex:1;min-width:0}
+.qtype{font-size:.72rem;font-weight:900;color:var(--accent);letter-spacing:.04em}
+.jp{font-weight:500;margin:2px 0 6px}
+.sent{margin:6px 0;line-height:2.4}
+.sent input{font-family:"Source Serif 4",Georgia,serif;font-size:1rem;border:none;border-bottom:2px solid var(--sub);background:#fbf8f0;padding:2px 6px;width:9em;max-width:100%;border-radius:4px 4px 0 0;color:var(--ink);text-align:center}
+.sent input:focus{outline:none;border-bottom-color:var(--accent);background:var(--accent-soft)}
+.sent input.good{border-bottom-color:var(--ok);background:var(--ok-soft)}
+.sent input.bad{border-bottom-color:var(--ng);background:var(--ng-soft)}
+.given{font-size:.85rem;color:var(--sub)}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.opt{font-family:"Source Serif 4",Georgia,serif;font-size:1rem;padding:6px 16px;border-radius:999px;border:1.5px solid var(--line);background:#fff;cursor:pointer;color:var(--ink)}
+.opt:hover{border-color:var(--accent)}
+.opt.good{background:var(--ok);border-color:var(--ok);color:#fff}
+.opt.bad{background:var(--ng);border-color:var(--ng);color:#fff}
+.opt.reveal{border-color:var(--ok);color:var(--ok);font-weight:600}
+.opt:disabled{cursor:default}
+.ord-zone{min-height:46px;border:2px dashed var(--line);border-radius:10px;padding:6px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0;background:#fbf8f0}
+.ord-zone.empty::before{content:"下の語句をタップして並べよう";color:var(--sub);font-size:.82rem;padding:0 6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.chip{font-family:"Source Serif 4",Georgia,serif;font-size:1rem;padding:4px 12px;border-radius:8px;border:1.5px solid var(--accent);background:#fff;color:var(--ink);cursor:pointer}
+.ord-zone .chip{background:var(--accent-soft)}
+.chip:disabled{opacity:.6;cursor:default}
+.ord-frame{font-family:"Source Serif 4",Georgia,serif;color:var(--sub)}
+.words{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0;font-family:"Source Serif 4",Georgia,serif;font-size:1.05rem}
+.word{padding:2px 6px;border-radius:6px;cursor:pointer;border:1.5px solid transparent}
+.word:hover{background:#f1ebdd}
+.word.sel{border-color:var(--accent);background:var(--accent-soft)}
+.word.wrongpos{border-color:var(--ng);background:var(--ng-soft)}
+.word.rightpos{border-color:var(--ok);background:var(--ok-soft)}
+.fix-in{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.9rem;color:var(--sub)}
+.fix-in input{font-family:"Source Serif 4",Georgia,serif;font-size:1rem;border:1.5px solid var(--line);border-radius:8px;padding:4px 10px;width:12em}
+textarea.w{width:100%;min-height:64px;font-family:"Source Serif 4",Georgia,serif;font-size:1rem;border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;background:#fbf8f0;color:var(--ink);resize:vertical}
+textarea.w:focus{outline:none;border-color:var(--accent)}
+.actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+button{font-family:inherit}
+.btn{font-weight:700;font-size:.88rem;padding:7px 16px;border-radius:9px;border:none;cursor:pointer;background:var(--ink);color:#fff}
+.btn.sub{background:transparent;color:var(--sub);border:1.5px solid var(--line)}
+.btn.okb{background:var(--ok)}.btn.ngb{background:var(--ng)}
+.fb{display:none;margin-top:12px;padding:12px 14px;border-radius:10px;font-size:.93rem;background:#f4efe3}
+.fb.on{display:block}
+.fb .verdict{font-weight:900;margin-bottom:4px}
+.q.ok .fb .verdict{color:var(--ok)}
+.q.ng .fb .verdict{color:var(--ng)}
+.fb .ans{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:1.02rem}
+.fb .exp{margin-top:6px;color:#3a4252}
+.hintbtn{background:#fff6d6;color:#8a6400;border:1.5px solid #f0d27a}
+.hintbtn:hover{background:#ffefb8}
+.hint-box{display:none;margin-top:10px;padding:10px 14px;border-radius:10px;background:#fff8e1;border:1px dashed #e6c25a;color:#6b5000;font-size:.92rem}
+.hint-box.on{display:block}
+.hint-box b{color:#8a6400}
+.exp2{margin-top:10px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:8px;font-size:.9rem;line-height:1.85;color:#3a4252}
+.exp2-h{font-weight:900;font-size:.8rem;color:var(--accent);margin-bottom:2px}
+.passage{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:12px;font-family:"Source Serif 4",Georgia,serif;font-size:1.05rem;line-height:1.95}
+.passage h5{font-family:"Zen Kaku Gothic New",sans-serif;margin:0 0 8px;font-size:.9rem;color:var(--accent)}
+.passage u{text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:3px}
+.passage .num{font-family:"Zen Kaku Gothic New";font-size:.75rem;font-weight:900;color:var(--accent);vertical-align:super}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+.vs>div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:.93rem}
+.vs small{color:var(--sub)}
+.vs-h{font-size:.78rem;font-weight:900;color:var(--accent);margin-bottom:2px}
+.steps{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.steps>div{flex:1 1 160px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:.9rem}
+.steps>div>b:first-child{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:.78rem;margin-right:6px}
+.ng-box{background:var(--ng-soft);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.93rem}
+.ng-h{font-size:.78rem;font-weight:900;color:var(--ng);margin-bottom:2px}
+.ng-box::before{content:none}
+@media (max-width:600px){.vs{grid-template-columns:1fr}}
+.foot{max-width:980px;margin:0 auto;padding:0 20px 40px;color:var(--sub);font-size:.8rem}
+@media (max-width:600px){
+  main{padding:20px 14px 60px}.hero{padding:20px}.hero h2{font-size:1.35rem}
+  .card,.q{padding:16px}.overall{display:none}
+  .tb{font-size:.85rem}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <h1>英文法 教科書＋問題集</h1>
+      <span class="meta">Lesson 9 分詞・分詞構文 ／ Lesson 10 比較</span>
+      <span class="overall">全体の正解 <b id="ovNum">0</b> / <span id="ovDen">0</span></span><button class="install" id="installBtn">アプリとして入れる</button>
+    </div>
+    <nav class="tabs" id="tabs">
+      <a href="#l9-text" data-v="l9-text"><span class="tg tg9">L9</span>解説</a>
+      <a href="#l9-drill" data-v="l9-drill"><span class="tg tg9">L9</span>問題</a>
+      <a href="#l10-text" data-v="l10-text"><span class="tg tg10">L10</span>解説</a>
+      <a href="#l10-drill" data-v="l10-drill"><span class="tg tg10">L10</span>問題</a>
+      <a href="#review" data-v="review"><span class="tg tgR">総合</span>まとめテスト</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ================= L9 解説 ================= -->
+<div class="view" id="v-l9-text" data-accent="l9">
+  <div class="hero">
+    <div class="kicker">LESSON 9 ・ 教科書</div>
+    <h2>分詞・分詞構文</h2>
+    <p>文に「状況」や「理由」をつけ加える表現を使えるようになろう。例文はタップすると和訳が出ます。</p>
+  </div>
+  <div class="toc">
+    <a href="#l9-text" data-jump="k90">はじめに：分詞とは</a>
+    <a href="#l9-text" data-jump="k91">9-1 補語になる分詞</a>
+    <a href="#l9-text" data-jump="k92">9-2 分詞構文</a>
+    <a href="#l9-text" data-jump="k93">9-3 否定・完了・重要表現</a>
+  </div>
+
+  <section class="kp" id="k90">
+    <div class="kp-head"><span class="kp-num">準備</span><h3>はじめに：分詞のきほん</h3></div>
+    <div class="card">
+      <h4>分詞には2種類ある</h4>
+      <p>分詞は動詞を変化させて<b>形容詞（や副詞）のように使う形</b>です。名詞を修飾したり、文の補語になったりします。</p>
+      <table class="tb">
+        <tr><th></th><th>形</th><th>基本の意味</th><th>例</th></tr>
+        <tr><th>現在分詞</th><td class="en">動詞の -ing</td><td>～している（能動・進行）</td><td class="en">a <b>sleeping</b> baby<br><small>眠っている赤ちゃん</small></td></tr>
+        <tr><th>過去分詞</th><td class="en">-ed／不規則変化</td><td>～された・～されている（受動）<br>～してしまった（完了）</td><td class="en">a <b>broken</b> window<br><small>割られた（割れた）窓</small></td></tr>
+      </table>
+      <div class="point">この課でいちばん大切なのは、<b>「何が」その動作をしているのか／されているのか</b>を考えること。する側なら現在分詞、される側なら過去分詞。</div>
+      <div class="vs">
+        <div><div class="vs-h">する側 → 現在分詞</div><span class="en">The news was <b>surprising</b>.</span><br><small>その知らせは（人を）驚かせるものだった。</small></div>
+        <div><div class="vs-h">される側 → 過去分詞</div><span class="en">I was <b>surprised</b> at the news.</span><br><small>私はその知らせに驚いた（驚かされた）。</small></div>
+      </div>
+      <p class="note">感情を表す動詞（surprise, excite, interest, bore, tire など）は「～させる」という意味。<b>人が主語なら過去分詞</b>（excited, interested）、<b>物事が主語なら現在分詞</b>（exciting, interesting）になることが多い。</p>
+      <table class="tb">
+        <tr><th>動詞</th><th>現在分詞（物事が主語）</th><th>過去分詞（人が主語）</th></tr>
+        <tr><td class="en">excite</td><td class="en">exciting（わくわくさせる）</td><td class="en">excited（わくわくした）</td></tr>
+        <tr><td class="en">interest</td><td class="en">interesting（興味深い）</td><td class="en">interested（興味がある）</td></tr>
+        <tr><td class="en">bore</td><td class="en">boring（退屈な）</td><td class="en">bored（退屈した）</td></tr>
+        <tr><td class="en">tire</td><td class="en">tiring（疲れさせる）</td><td class="en">tired（疲れた）</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="kp" id="k91">
+    <div class="kp-head"><span class="kp-num">9-1</span><h3>補語（C）になる分詞</h3></div>
+
+    <div class="card">
+      <h4>〈S ＋ V（自動詞）＋ 分詞〉</h4>
+      <div class="point">sit / stand / come / lie / keep などのあとに分詞を続けると、<b>「…しながら〔…された状態で〕～する」</b>という、2つの動作・状態が同時に起きていることを表す。</div>
+      <p>たとえば <span class="en">He sat.</span>（彼は座った）だけでも文になりますが、そこに分詞を足すと「どんな様子で座っていたか」を説明できます。分詞は<b>主語の様子を説明する補語</b>です。</p>
+      <ul class="ex">
+        <li><span class="s en">The girl sat <mark>reading</mark> a comic book.</span><span class="hint">▶ 和訳</span><span class="t">その少女はマンガを読みながら座っていた。（座る＋読む が同時）</span></li>
+        <li><span class="s en">My grandfather lay <mark>sleeping</mark> on the sofa.</span><span class="hint">▶ 和訳</span><span class="t">祖父はソファーで横になって眠っていた。</span></li>
+        <li><span class="s en">The kids came <mark>running</mark> to the gate.</span><span class="hint">▶ 和訳</span><span class="t">子どもたちが門のところへ走ってやって来た。</span></li>
+        <li><span class="s en">The singer stood <mark>surrounded</mark> by her fans.</span><span class="hint">▶ 和訳</span><span class="t">その歌手はファンに囲まれて立っていた。（歌手は「囲まれる」側）</span></li>
+        <li><span class="s en">The baby kept <mark>crying</mark> all night.</span><span class="hint">▶ 和訳</span><span class="t">赤ちゃんは一晩中泣き続けた。（keep ～ing「～し続ける」）</span></li>
+        <li><span class="s en">She looked <mark>tired</mark> after the long trip.</span><span class="hint">▶ 和訳</span><span class="t">長旅のあと、彼女は疲れているように見えた。</span></li>
+      </ul>
+      <table class="tb">
+        <tr><th>現在分詞（-ing）</th><td>主語が「～している」（能動）　<span class="en">sat <b>reading</b></span></td></tr>
+        <tr><th>過去分詞（-ed など）</th><td>主語が「～されている」（受動）　<span class="en">stood <b>surrounded</b></span></td></tr>
+      </table>
+      <table class="tb">
+        <tr><th colspan="2">分詞を補語にとる主な自動詞</th></tr>
+        <tr><td>姿勢・移動</td><td class="en">sit（座る）, stand（立つ）, lie（横になる）, come（来る）, go（行く）</td></tr>
+        <tr><td>状態の継続</td><td class="en">keep（～し続ける）, remain（～のままである）</td></tr>
+        <tr><td>見え方・変化</td><td class="en">look（～に見える）, seem（～らしい）, become / get（～になる）</td></tr>
+      </table>
+      <p class="note"><span class="en">go ～ing</span> は「～しに行く」。<span class="en">go shopping / go fishing / go swimming</span></p>
+      <div class="ng-box"><div class="ng-h">よくある間違い</div>
+        <span class="en">✕ My father sat <s>thought</s> for a long time.</span><br>
+        <span class="en">○ My father sat <b>thinking</b> for a long time.</span>（父は自分で考えている＝能動）
+      </div>
+    </div>
+
+    <div class="card">
+      <h4>〈S ＋ V ＋ O ＋ 分詞〉</h4>
+      <div class="point">keep / leave / find などは〈V ＋ O ＋ 分詞〉の形をとる。分詞は<b>O の様子</b>を説明する。だから<b>O と分詞の関係</b>で現在分詞か過去分詞かを決める。</div>
+      <div class="steps">
+        <div><b>1</b>O を見つける</div>
+        <div><b>2</b>「O が～している」なら現在分詞</div>
+        <div><b>3</b>「O が～されている」なら過去分詞</div>
+      </div>
+      <ul class="ex">
+        <li><span class="s en">I'm sorry to keep you <mark>waiting</mark>.</span><span class="hint">▶ 和訳</span><span class="t">お待たせしてすみません。（you が待っている＝能動）</span></li>
+        <li><span class="s en">Don't leave the water <mark>running</mark>.</span><span class="hint">▶ 和訳</span><span class="t">水を流しっぱなしにしてはいけません。（水が流れている）</span></li>
+        <li><span class="s en">She kept the door <mark>locked</mark> all day.</span><span class="hint">▶ 和訳</span><span class="t">彼女は一日中ドアに鍵をかけたままにしておいた。（door が鍵をかけられている＝受動）</span></li>
+        <li><span class="s en">When I got home, I found my window <mark>broken</mark>.</span><span class="hint">▶ 和訳</span><span class="t">帰宅すると、窓が割れているのに気づいた。（窓が割られている）</span></li>
+        <li><span class="s en">I found a cat <mark>sleeping</mark> on my bed.</span><span class="hint">▶ 和訳</span><span class="t">ネコがベッドで眠っているのに気づいた。（ネコが眠っている）</span></li>
+      </ul>
+      <table class="tb">
+        <tr><th>keep ＋ O ＋ 分詞</th><td>O を～している〔された〕状態にしておく</td></tr>
+        <tr><th>leave ＋ O ＋ 分詞</th><td>O を～している〔された〕まま放っておく</td></tr>
+        <tr><th>find ＋ O ＋ 分詞</th><td>O が～している〔されている〕のに気づく</td></tr>
+      </table>
+      <div class="point"><b>知覚動詞</b>（see / hear / feel / watch など）も〈V ＋ O ＋ 分詞〉の形をとる。</div>
+      <ul class="ex">
+        <li><span class="s en">I saw a boy <mark>crossing</mark> the street.</span><span class="hint">▶ 和訳</span><span class="t">少年が通りを渡っているところを見た。（動作の途中）</span></li>
+        <li><span class="s en">I heard my name <mark>called</mark>.</span><span class="hint">▶ 和訳</span><span class="t">自分の名前が呼ばれるのが聞こえた。（名前は呼ばれる側）</span></li>
+      </ul>
+      <p class="note">知覚動詞＋ O ＋<b>原形</b>は「（最初から最後まで）～するのを」、＋<b>現在分詞</b>は「～しているところを」。<span class="en">I saw him <b>cross</b> the street.</span>（渡るのを見た）／<span class="en">I saw him <b>crossing</b> the street.</span>（渡っているところを見た）</p>
+      <p class="note">like や want も〈V ＋ O ＋ 分詞〉で使われることがある。<span class="en">I want this work <b>finished</b> by five.</span>（5時までにこの仕事を終わらせてほしい）</p>
+    </div>
+
+    <div class="card">
+      <h4>〈have〔get〕＋ O ＋ 過去分詞〉／〈make ＋ O ＋ 過去分詞〉</h4>
+      <div class="point"><span class="en">have〔get〕＋ O ＋ 過去分詞</span> は<b>「O を～してもらう」（依頼）</b>または<b>「O を～される」（被害）</b>。どちらの意味かは<b>文の内容</b>で判断する。</div>
+      <ul class="ex">
+        <li><span class="s en">I had my hair <mark>cut</mark> yesterday.</span><span class="hint">▶ 和訳</span><span class="t">昨日、髪を切ってもらった。（cut は過去分詞も cut）</span></li>
+        <li><span class="s en">I got my computer <mark>repaired</mark>.</span><span class="hint">▶ 和訳</span><span class="t">パソコンを修理してもらった。（get は have よりくだけた言い方）</span></li>
+        <li><span class="s en">We had a pizza <mark>delivered</mark>.</span><span class="hint">▶ 和訳</span><span class="t">ピザを配達してもらった。</span></li>
+        <li><span class="s en">He had his wallet <mark>stolen</mark> on the train.</span><span class="hint">▶ 和訳</span><span class="t">彼は電車で財布を盗まれた。（被害）</span></li>
+      </ul>
+      <div class="vs">
+        <div><div class="vs-h">O が「人」→ 原形</div><span class="en">I had <b>the mechanic</b> repair my car.</span><br><small>整備士に車を修理してもらった。（整備士が修理する）</small></div>
+        <div><div class="vs-h">O が「物」→ 過去分詞</div><span class="en">I had <b>my car</b> repaired.</span><br><small>車を修理してもらった。（車が修理される）</small></div>
+      </div>
+      <p class="note">〈have〔get〕＋ O ＋ 現在分詞〉は「O を～している状態にする」。<span class="en">The comedian had everyone <b>laughing</b>.</span>（その芸人はみんなを笑わせた）</p>
+      <div class="ng-box"><div class="ng-h">よくある間違い</div>
+        <span class="en">✕ I cut my hair at the barber's.</span>（自分で切ったことになる）→ <span class="en">○ I <b>had my hair cut</b> at the barber's.</span><br>
+        <span class="en">✕ I had stolen my bike.</span>（自分が盗んだことになる）→ <span class="en">○ I had <b>my bike stolen</b>.</span>（語順：have ＋ O ＋過去分詞）
+      </div>
+      <div class="point"><span class="en">make oneself ＋ 過去分詞</span> の慣用表現。「自分自身を～される状態にする」がもとの意味。</div>
+      <table class="tb">
+        <tr><th class="en">make oneself heard</th><td>（自分の声を）聞こえるようにする・声を届かせる</td></tr>
+        <tr><th class="en">make oneself understood</th><td>（自分の言うことを）わかってもらう・通じさせる</td></tr>
+      </table>
+      <ul class="ex">
+        <li><span class="s en">Can you make yourself <mark>understood</mark> in English?</span><span class="hint">▶ 和訳</span><span class="t">英語で自分の言うことをわかってもらえますか。</span></li>
+        <li><span class="s en">The room was so noisy that I couldn't make myself <mark>heard</mark>.</span><span class="hint">▶ 和訳</span><span class="t">部屋がとてもうるさかったので、私の声は届かなかった。</span></li>
+      </ul>
+      <p class="note">oneself は主語に合わせて myself / yourself / himself / herself / themselves などに変える。make が現在分詞を伴うことはない。</p>
+    </div>
+  </section>
+
+  <section class="kp" id="k92">
+    <div class="kp-head"><span class="kp-num">9-2</span><h3>分詞構文</h3></div>
+    <div class="card">
+      <h4>分詞構文の形</h4>
+      <div class="point">分詞が導く句が、文に「時」「理由」などの情報を<b>副詞のようにつけ加える</b>ものを分詞構文という。接続詞を使った文を短く、引きしまった形にしたものと考えるとわかりやすい。</div>
+      <p><b>作り方（3ステップ）</b></p>
+      <table class="tb">
+        <tr><th>① 接続詞を消す</th><td class="en"><s>When</s> we were walking in the park, we met Tom.</td></tr>
+        <tr><th>② 主語を消す（主節と同じとき）</th><td class="en"><s>we</s> were walking in the park, …</td></tr>
+        <tr><th>③ 動詞を -ing にする</th><td class="en"><b>Walking</b> in the park, we met Tom.</td></tr>
+      </table>
+      <ul class="ex">
+        <li><span class="s en"><mark>Walking</mark> in the park, we met Tom.</span><span class="hint">▶ 和訳</span><span class="t">公園を歩いているときに、私たちはトムに会った。</span></li>
+        <li><span class="s en">(<mark>Being</mark>) <mark>Seen</mark> from the plane, the river looks like a snake.</span><span class="hint">▶ 和訳</span><span class="t">飛行機から見ると（←見られると）、その川はヘビのように見える。</span></li>
+        <li><span class="s en"><mark>Being</mark> sick in bed, I couldn't go to the concert.</span><span class="hint">▶ 和訳</span><span class="t">病気で寝ていたので、コンサートに行けなかった。</span></li>
+      </ul>
+      <table class="tb">
+        <tr><th colspan="2">もとの動詞の形ごとの変化</th></tr>
+        <tr><td>一般動詞（能動）</td><td class="en">As I <b>felt</b> tired → <b>Feeling</b> tired, …</td></tr>
+        <tr><td>be 動詞＋形容詞・名詞</td><td class="en">As I <b>was</b> sick → <b>Being</b> sick, …</td></tr>
+        <tr><td>進行形</td><td class="en">While I <b>was reading</b> → <b>Reading</b> …（was が Being になり省略）</td></tr>
+        <tr><td>受動態</td><td class="en">As it <b>is written</b> → (Being) <b>Written</b> …</td></tr>
+      </table>
+      <p class="note">受動態の文を分詞構文にすると〈Being ＋ 過去分詞〉になるが、Being はふつう省略され、過去分詞で始まる。</p>
+      <p><b>置く位置</b>：文頭・文中・文末のどこにでも置ける。</p>
+      <ul class="ex">
+        <li><span class="s en"><mark>Hearing the news</mark>, she began to cry.</span><span class="hint">▶ 和訳</span><span class="t">その知らせを聞いて、彼女は泣き出した。（文頭）</span></li>
+        <li><span class="s en">My father, <mark>reading the paper</mark>, didn't hear me.</span><span class="hint">▶ 和訳</span><span class="t">父は新聞を読んでいて、私の声が聞こえなかった。（文中）</span></li>
+        <li><span class="s en">She sat on the bench, <mark>eating a sandwich</mark>.</span><span class="hint">▶ 和訳</span><span class="t">彼女はサンドイッチを食べながらベンチに座っていた。（文末）</span></li>
+      </ul>
+      <div class="ng-box"><div class="ng-h">注意：主語が違うときは主語を消せない</div>
+        <span class="en">When <b>I</b> opened the door, <b>a cat</b> ran in.</span> の I と a cat は別。<br>
+        <span class="en">✕ Opening the door, a cat ran in.</span>（ネコがドアを開けたことになる）<br>
+        <span class="en">○ When I opened the door, a cat ran in.</span>（接続詞のまま書く）
+      </div>
+      <p class="note">発展：主語を分詞の前に残す形（独立分詞構文）もある。<span class="en"><b>It</b> being Sunday, the shop was closed.</span>（日曜日だったので店は閉まっていた）</p>
+    </div>
+
+    <div class="card">
+      <h4>分詞構文が表す意味</h4>
+      <div class="point">意味は<b>文全体や前後関係から判断</b>する。訳しにくいときは、接続詞を補って考える。</div>
+      <table class="tb">
+        <tr><th>時</th><td>～するとき、～してから<br><span class="en">when / while / after</span></td><td class="en"><b>Arriving</b> at the airport, I called my mother.<br><small>空港に着いたとき、母に電話した。</small></td></tr>
+        <tr><th>原因・理由</th><td>～なので<br><span class="en">because / as / since</span></td><td class="en"><b>Feeling</b> tired, I went to bed early.<br><small>疲れていたので、早く寝た。</small></td></tr>
+        <tr><th>付帯状況（同時）</th><td>～しながら</td><td class="en">She walked home, <b>singing</b> a song.<br><small>彼女は歌を歌いながら歩いて帰った。</small></td></tr>
+        <tr><th>付帯状況（連続）</th><td>～して、そして…<br><span class="en">and</span></td><td class="en">He opened the letter, <b>finding</b> a photo inside.<br><small>彼は手紙を開け、中に写真を見つけた。</small></td></tr>
+        <tr><th>条件</th><td>～すれば<br><span class="en">if</span></td><td class="en"><b>Going</b> straight, you'll see the station.<br><small>まっすぐ行けば、駅が見えます。</small></td></tr>
+      </table>
+      <p><b>意味を見分けるコツ</b></p>
+      <table class="tb">
+        <tr><th>文末にある</th><td>「～しながら」（同時）か「そして～」（連続）が多い</td></tr>
+        <tr><th>主節が未来・命令</th><td>「～すれば」（条件）が多い：<span class="en">Turning left, <b>you'll</b> find …</span></td></tr>
+        <tr><th>being／感情・状態の動詞</th><td>「～なので」（理由）が多い：<span class="en">Being tired / Not knowing …</span></td></tr>
+        <tr><th>arrive, hear, see など一回の動作</th><td>「～したとき」（時）が多い</td></tr>
+      </table>
+      <p><b>接続詞の文 ⇔ 分詞構文の書き換え練習</b>（タップで分詞構文）</p>
+      <ul class="ex">
+        <li><span class="s en">While I was waiting for the bus, I read a book.</span><span class="hint">▶ 分詞構文</span><span class="t en">→ <b>Waiting</b> for the bus, I read a book.</span></li>
+        <li><span class="s en">Because she had a bad cold, she stayed home.</span><span class="hint">▶ 分詞構文</span><span class="t en">→ <b>Having</b> a bad cold, she stayed home.</span></li>
+        <li><span class="s en">He sent me an e-mail and said he would come.</span><span class="hint">▶ 分詞構文</span><span class="t en">→ He sent me an e-mail, <b>saying</b> he would come.</span></li>
+      </ul>
+      <p class="note">連続の分詞構文は and を補うと解釈しやすい。文の流れの順に「～して、そして…」と訳す。</p>
+    </div>
+
+    <div class="card">
+      <h4>慣用的な分詞構文</h4>
+      <p>主語を考えずに決まり文句として使う分詞構文があります。そのまま覚えよう。</p>
+      <table class="tb">
+        <tr><th class="en">generally speaking</th><td>一般的に言えば</td></tr>
+        <tr><th class="en">frankly speaking</th><td>率直に言えば</td></tr>
+        <tr><th class="en">judging from ～</th><td>～から判断すると</td></tr>
+        <tr><th class="en">compared with〔to〕～</th><td>～と比べると</td></tr>
+        <tr><th class="en">considering ～</th><td>～を考えると</td></tr>
+      </table>
+      <ul class="ex">
+        <li><span class="s en"><mark>Compared with</mark> last year, this summer is cooler.</span><span class="hint">▶ 和訳</span><span class="t">去年と比べると、この夏は涼しい。</span></li>
+        <li><span class="s en"><mark>Judging from</mark> his face, he must be angry.</span><span class="hint">▶ 和訳</span><span class="t">顔つきから判断すると、彼は怒っているに違いない。</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="kp" id="k93">
+    <div class="kp-head"><span class="kp-num">9-3</span><h3>否定・完了形の分詞構文／分詞を使った重要表現</h3></div>
+    <div class="card">
+      <h4>否定の分詞構文</h4>
+      <div class="point">否定形は<b>分詞の直前に not（never）</b>を置く。もとの文の don't / didn't / wasn't などは消えて、not だけが前に出るイメージ。</div>
+      <span class="formula en">Not ＋ ～ing, S ＋ V …</span>
+      <ul class="ex">
+        <li><span class="s en"><mark>Not knowing</mark> his address, I couldn't write to him.</span><span class="hint">▶ 和訳</span><span class="t">彼の住所を知らなかったので、手紙を書けなかった。（≒ As I didn't know his address, …）</span></li>
+        <li><span class="s en"><mark>Not being</mark> hungry, she skipped lunch.</span><span class="hint">▶ 和訳</span><span class="t">おなかがすいていなかったので、彼女は昼食を抜いた。（≒ As she wasn't hungry, …）</span></li>
+        <li><span class="s en"><mark>Not being able</mark> to find a seat, I stood all the way.</span><span class="hint">▶ 和訳</span><span class="t">席が見つからなかったので、ずっと立っていた。（couldn't ＝ wasn't able to）</span></li>
+      </ul>
+      <p class="note">否定の分詞構文は「～しないので」という<b>理由</b>の意味になることが多い。</p>
+    </div>
+
+    <div class="card">
+      <h4>完了形の分詞構文</h4>
+      <div class="point">主節の動詞より<b>前の「時」</b>のことを表すときは〈<b>Having ＋ 過去分詞</b>〉を使う。否定は〈Not〔Never〕having ＋ 過去分詞〉。</div>
+      <table class="tb">
+        <tr><th>分詞の形</th><th>分詞が表す時</th><th>例</th></tr>
+        <tr><td class="en">～ing</td><td>主節と<b>同じ時</b></td><td class="en"><b>Feeling</b> tired, I went to bed.<br><small>疲れていたので寝た（疲れた＝寝た時）</small></td></tr>
+        <tr><td class="en">Having ＋過去分詞</td><td>主節より<b>前の時</b></td><td class="en"><b>Having worked</b> all day, I was tired.<br><small>一日中働いたので疲れていた（働いた→疲れた）</small></td></tr>
+      </table>
+      <ul class="ex">
+        <li><span class="s en"><mark>Having finished</mark> dinner, we went for a walk.</span><span class="hint">▶ 和訳</span><span class="t">夕食を終えてから、私たちは散歩に出かけた。（≒ After we had finished dinner, …）</span></li>
+        <li><span class="s en"><mark>Having lived</mark> in London for five years, he speaks English well.</span><span class="hint">▶ 和訳</span><span class="t">ロンドンに5年住んでいたので、彼は英語が上手だ。（≒ As he has lived〔lived〕…）</span></li>
+        <li><span class="s en"><mark>Not having seen</mark> the movie, I couldn't join the conversation.</span><span class="hint">▶ 和訳</span><span class="t">その映画を見ていなかったので、会話に加われなかった。</span></li>
+        <li><span class="s en"><mark>Having never been</mark> abroad, she was nervous.</span><span class="hint">▶ 和訳</span><span class="t">一度も海外に行ったことがなかったので、彼女は緊張していた。</span></li>
+      </ul>
+      <div class="ng-box"><div class="ng-h">not の位置に注意</div>
+        <span class="en">✕ Having not seen the movie, …</span> → <span class="en">○ <b>Not having</b> seen the movie, …</span><br>
+        never の場合は <span class="en">Never having been</span> も <span class="en">Having never been</span> もOK。
+      </div>
+      <p class="note">受動の完了形 〈Having been ＋過去分詞〉 では、Having been がよく省略される。<span class="en">(Having been) Written in a hurry, the letter had many mistakes.</span>（急いで書かれたので、その手紙には間違いが多かった）</p>
+    </div>
+
+    <div class="card">
+      <h4>付帯状況の〈with ＋ 名詞 ＋ 分詞〉</h4>
+      <div class="point">「名詞が～して〔～されて〕いる状態で」。<b>with のあとの名詞と分詞の関係</b>で現在分詞／過去分詞を選ぶ。</div>
+      <div class="vs">
+        <div><div class="vs-h">名詞が～している → 現在分詞</div><span class="en">with his hands <b>shaking</b></span><br><small>手を震わせて（手が震えている）</small></div>
+        <div><div class="vs-h">名詞が～されている → 過去分詞</div><span class="en">with his eyes <b>closed</b></span><br><small>目を閉じて（目が閉じられている）</small></div>
+      </div>
+      <ul class="ex">
+        <li><span class="s en">He was listening to music <mark>with his eyes closed</mark>.</span><span class="hint">▶ 和訳</span><span class="t">彼は目を閉じて音楽を聞いていた。</span></li>
+        <li><span class="s en">She ran <mark>with her hair flying</mark> in the wind.</span><span class="hint">▶ 和訳</span><span class="t">彼女は髪を風になびかせて走った。</span></li>
+        <li><span class="s en">He stood <mark>with his arms folded</mark>.</span><span class="hint">▶ 和訳</span><span class="t">彼は腕を組んで立っていた。（腕は「組まれる」）</span></li>
+        <li><span class="s en">Don't speak <mark>with your mouth full</mark>.</span><span class="hint">▶ 和訳</span><span class="t">口に食べ物を入れたまましゃべってはいけない。（分詞の代わりに形容詞）</span></li>
+        <li><span class="s en">He fell asleep <mark>with the TV on</mark>.</span><span class="hint">▶ 和訳</span><span class="t">彼はテレビをつけたまま眠ってしまった。（副詞 on）</span></li>
+      </ul>
+      <table class="tb">
+        <tr><th colspan="2">よく出る形</th></tr>
+        <tr><td class="en">with one's arms folded</td><td>腕を組んで</td></tr>
+        <tr><td class="en">with one's legs crossed</td><td>脚を組んで</td></tr>
+        <tr><td class="en">with one's eyes closed / shut</td><td>目を閉じて</td></tr>
+        <tr><td class="en">with the engine running</td><td>エンジンをかけたまま</td></tr>
+        <tr><td class="en">with tears running down one's face</td><td>涙を流しながら</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h4>分詞を使った重要表現</h4>
+      <table class="tb">
+        <tr><th class="en">go ～ing</th><td>～しに行く</td><td class="en">go skiing / go camping</td></tr>
+        <tr><th class="en">be busy ～ing</th><td>～するのに忙しい</td><td class="en">I'm busy doing my homework.</td></tr>
+        <tr><th class="en">spend ＋時間＋ ～ing</th><td>～して（時間）を過ごす</td><td class="en">He spent the weekend reading.</td></tr>
+        <tr><th class="en">have trouble〔difficulty〕～ing</th><td>～するのに苦労する</td><td class="en">I had trouble finding the house.</td></tr>
+        <tr><th class="en">There ＋ be ＋名詞＋ ～ing</th><td>～している（名詞）がいる</td><td class="en">There were many people waiting.</td></tr>
+        <tr><th>接続詞 ＋ 分詞</th><td>意味をはっきりさせる</td><td class="en">While walking home, I met Ken.</td></tr>
+      </table>
+      <ul class="ex">
+        <li><span class="s en">We <mark>went shopping</mark> in Shibuya.</span><span class="hint">▶ 和訳</span><span class="t">私たちは渋谷へ買い物に行った。（✕ go shopping to Shibuya：場所の前置詞は ～ing に合わせて in / at）</span></li>
+        <li><span class="s en">She <mark>spent</mark> three hours <mark>cleaning</mark> her room.</span><span class="hint">▶ 和訳</span><span class="t">彼女は部屋の掃除に3時間を費やした。</span></li>
+        <li><span class="s en"><mark>There was</mark> a dog <mark>barking</mark> outside.</span><span class="hint">▶ 和訳</span><span class="t">外でほえている犬がいた。</span></li>
+        <li><span class="s en"><mark>While</mark> (I was) <mark>staying</mark> in Kyoto, I visited many temples.</span><span class="hint">▶ 和訳</span><span class="t">京都に滞在している間に、たくさんの寺を訪れた。（接続詞を残すと意味がはっきりする）</span></li>
+        <li><span class="s en"><mark>While being shown</mark> around the school, I met my new teacher.</span><span class="hint">▶ 和訳</span><span class="t">学校を案内してもらっている間に、新しい担任に会った。（While (I was) being shown … ：受動の進行形から I was を省略）</span></li>
+      </ul>
+      <div class="ng-box"><div class="ng-h">よくある間違い</div>
+        <span class="en">✕ be busy <s>to do</s></span> → <span class="en">○ be busy <b>doing</b></span>　／　<span class="en">✕ spend time <s>to read</s></span> → <span class="en">○ spend time <b>reading</b></span>
+      </div>
+      <p class="note">〈接続詞＋分詞〉は、when / while / though / after などの接続詞を残した分詞構文。主語と be 動詞を省略した形とも考えられる。</p>
+    </div>
+  </section>
+  <a class="go-drill" href="#l9-drill"><span>Lesson 9 の問題に進む →</span><small>Basic・Standard・応用</small></a>
+</div>
+
+<!-- ================= L10 解説 ================= -->
+<div class="view" id="v-l10-text" data-accent="l10">
+  <div class="hero">
+    <div class="kicker">LESSON 10 ・ 教科書</div>
+    <h2>比較</h2>
+    <p>さまざまな比較表現を使って、主張や事実を明確に伝えられるようになろう。例文はタップすると和訳が出ます。</p>
+  </div>
+  <div class="toc">
+    <a href="#l10-text" data-jump="k100">はじめに：比較の3つの形</a>
+    <a href="#l10-text" data-jump="k101">10-1 比較級を使った表現</a>
+    <a href="#l10-text" data-jump="k102">10-2 原級・最上級を使った表現</a>
+  </div>
+
+  <section class="kp" id="k100">
+    <div class="kp-head"><span class="kp-num">準備</span><h3>はじめに：原級・比較級・最上級</h3></div>
+    <div class="card">
+      <h4>3つの形と基本の文</h4>
+      <table class="tb">
+        <tr><th>原級</th><td class="en">as ＋原級＋ as ～</td><td>～と同じくらい…</td><td class="en">Ken is <b>as tall as</b> Tom.</td></tr>
+        <tr><th>比較級</th><td class="en">比較級＋ than ～</td><td>～より…</td><td class="en">Ken is <b>taller than</b> Tom.</td></tr>
+        <tr><th>最上級</th><td class="en">the ＋最上級＋ in〔of〕～</td><td>～の中でいちばん…</td><td class="en">Ken is <b>the tallest in</b> his class.</td></tr>
+      </table>
+      <h4 style="margin-top:16px">比較級・最上級の作り方</h4>
+      <table class="tb">
+        <tr><th>ふつうの語</th><td>-er / -est</td><td class="en">tall – taller – tallest</td></tr>
+        <tr><th>e で終わる語</th><td>-r / -st</td><td class="en">large – larger – largest</td></tr>
+        <tr><th>〈子音字＋ y〉</th><td>y を i にして -er / -est</td><td class="en">happy – happier – happiest</td></tr>
+        <tr><th>〈短母音＋子音字〉</th><td>子音字を重ねる</td><td class="en">big – bigger – biggest / hot – hotter</td></tr>
+        <tr><th>長い語など</th><td>more / most ＋原級</td><td class="en">famous – more famous – most famous</td></tr>
+      </table>
+      <table class="tb">
+        <tr><th colspan="2">不規則に変化する語（必ず覚える）</th></tr>
+        <tr><td class="en">good / well</td><td class="en">better – best</td></tr>
+        <tr><td class="en">bad / badly / ill</td><td class="en">worse – worst</td></tr>
+        <tr><td class="en">many / much</td><td class="en">more – most</td></tr>
+        <tr><td class="en">little</td><td class="en">less – least</td></tr>
+        <tr><td class="en">far</td><td class="en">farther – farthest（距離）／ further – furthest（程度・距離）</td></tr>
+      </table>
+      <p class="note">最上級のあとの範囲は、<b>in ＋場所・集団</b>（in my class, in Japan）、<b>of ＋複数を表す語</b>（of the three, of all）。</p>
+    </div>
+  </section>
+
+  <section class="kp" id="k101">
+    <div class="kp-head"><span class="kp-num">10-1</span><h3>比較級を使った表現</h3></div>
+    <div class="card">
+      <h4>差を表す比較級</h4>
+      <div class="point">2つのものを比べて差があるときは〈<b>比較級 ＋ than ～</b>〉。<b>具体的な差</b>や<b>差の大小</b>を表す語句は比較級の<b>直前</b>に置く。</div>
+      <ul class="ex">
+        <li><span class="s en">My sister is <mark>two years older</mark> than I (am).</span><span class="hint">▶ 和訳</span><span class="t">姉は私より2歳年上だ。（than のあとの am は省略できる）</span></li>
+        <li><span class="s en">This bridge is <mark>500 meters longer</mark> than that one.</span><span class="hint">▶ 和訳</span><span class="t">この橋はあの橋より500メートル長い。（one ＝ bridge のくり返しを避ける）</span></li>
+        <li><span class="s en">This bag is <mark>much heavier</mark> than that one.</span><span class="hint">▶ 和訳</span><span class="t">このかばんはあのかばんよりずっと重い。</span></li>
+        <li><span class="s en">It is <mark>a little warmer</mark> today than yesterday.</span><span class="hint">▶ 和訳</span><span class="t">今日は昨日より少し暖かい。</span></li>
+      </ul>
+      <table class="tb">
+        <tr><th>差が大きい（ずっと・はるかに）</th><td class="en">much, far, a lot（口語）, even / still（さらに）</td></tr>
+        <tr><th>差が小さい（少し）</th><td class="en">a little, a bit</td></tr>
+      </table>
+      <p class="note">具体的な差は by を使って文末に置くこともできる。<span class="en">My sister is older than I <b>by two years</b>.</span></p>
+      <div class="ng-box"><div class="ng-h">よくある間違い</div>
+        <span class="en">✕ It is <s>very</s> hotter today.</span> → <span class="en">○ It is <b>much</b> hotter today.</span>（very は比較級を強められない）
+      </div>
+      <div class="point"><b>比べるものの種類をそろえる</b>。「インドの人口」と比べるのは「日本の人口」。</div>
+      <ul class="ex">
+        <li><span class="s en">The population of India is larger than <mark>that of</mark> Japan.</span><span class="hint">▶ 和訳</span><span class="t">インドの人口は日本の人口より多い。（that ＝ the population。複数なら those）</span></li>
+      </ul>
+      <p class="note">「人口が多い」は large を使う（✕ many）。</p>
+    </div>
+
+    <div class="card">
+      <h4>〈less ＋ 原級 ＋ than ～〉</h4>
+      <div class="point">「～ほど…でない」。相手に及ばないことを表す。<b>less のあとは原級</b>（比較級にしない）。</div>
+      <ul class="ex">
+        <li><span class="s en">This test was <mark>less difficult</mark> than the last one.</span><span class="hint">▶ 和訳</span><span class="t">このテストは前回ほど難しくなかった。</span></li>
+        <li><span class="s en">The North Pole is <mark>less cold</mark> than the South Pole.</span><span class="hint">▶ 和訳</span><span class="t">北極は南極ほど寒くない。</span></li>
+      </ul>
+      <div class="vs">
+        <div><div class="vs-h">less を使う</div><span class="en">This book is <b>less interesting than</b> that one.</span></div>
+        <div><div class="vs-h">not as〔so〕～ as を使う</div><span class="en">This book is <b>not as interesting as</b> that one.</span></div>
+      </div>
+      <p class="note">2つの文はほぼ同じ意味。会話では not as ～ as のほうがよく使われる。</p>
+      <div class="ng-box"><div class="ng-h">よくある間違い</div>
+        <span class="en">✕ less <s>easier</s> than</span> → <span class="en">○ less <b>easy</b> than</span>　／　<span class="en">✕ less <s>more</s> expensive</span> → <span class="en">○ less <b>expensive</b></span>
+      </div>
+      <table class="tb">
+        <tr><th colspan="2">〈more ＋ 原級〉で比較級を作る語（復習）</th></tr>
+        <tr><td>-ful, -ish, -ous で終わる形容詞</td><td class="en">useful, careful, selfish, famous など</td></tr>
+        <tr><td>3音節以上の形容詞・副詞</td><td class="en">difficult, popular, expensive, interesting など</td></tr>
+        <tr><td>-ly で終わる副詞</td><td class="en">slowly, quickly など（early は例外 → earlier）</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h4>〈比較級 ＋ and ＋ 比較級〉</h4>
+      <div class="point">「だんだん…・ますます…」と程度が増していくことを表す。<b>and の前後に同じ比較級</b>を置く。more 型の語は〈<b>more and more ＋ 原級</b>〉。</div>
+      <ul class="ex">
+        <li><span class="s en">It is getting <mark>colder and colder</mark>.</span><span class="hint">▶ 和訳</span><span class="t">だんだん寒くなってきている。</span></li>
+        <li><span class="s en">The road got <mark>worse and worse</mark>.</span><span class="hint">▶ 和訳</span><span class="t">道はどんどん悪くなった。（bad の比較級 worse）</span></li>
+        <li><span class="s en">The game became <mark>more and more exciting</mark>.</span><span class="hint">▶ 和訳</span><span class="t">試合はますますおもしろくなった。</span></li>
+        <li><span class="s en"><mark>More and more</mark> people are using e-books.</span><span class="hint">▶ 和訳</span><span class="t">ますます多くの人が電子書籍を使っている。（more and more ＋名詞）</span></li>
+        <li><span class="s en">I have <mark>less and less</mark> free time.</span><span class="hint">▶ 和訳</span><span class="t">自由な時間がだんだん少なくなっている。</span></li>
+      </ul>
+      <div class="ng-box"><div class="ng-h">よくある間違い</div>
+        <span class="en">✕ more exciting and more exciting</span> → <span class="en">○ <b>more and more</b> exciting</span>（原級は最後に1回だけ）
+      </div>
+      <p class="note">get / become / grow（～になる）と一緒に使うことが多い。</p>
+    </div>
+
+    <div class="card">
+      <h4>〈the ＋ 比較級 ～, the ＋ 比較級 …〉</h4>
+      <div class="point">「～すればするほど、ますます…」。一方の程度が変わると、それに比例してもう一方も変わることを表す。比較級のあとに〈主語 ＋ 動詞〉が続く。</div>
+      <span class="formula en">The ＋比較級＋ S ＋ V, the ＋比較級＋ S ＋ V.</span>
+      <p><b>作り方</b>：ふつうの文の比較級を、the をつけて文頭に出す。</p>
+      <table class="tb">
+        <tr><th>もとの意味</th><td class="en">If you practice <b>more</b>, you will play <b>better</b>.</td></tr>
+        <tr><th>比較級を前へ</th><td class="en"><b>The more</b> you practice, <b>the better</b> you will play.</td></tr>
+      </table>
+      <ul class="ex">
+        <li><span class="s en"><mark>The more</mark> you read, <mark>the more</mark> you learn.</span><span class="hint">▶ 和訳</span><span class="t">読めば読むほど、多くのことを学ぶ。</span></li>
+        <li><span class="s en"><mark>The higher</mark> we climbed, <mark>the colder</mark> it became.</span><span class="hint">▶ 和訳</span><span class="t">高く登れば登るほど、寒くなった。</span></li>
+        <li><span class="s en"><mark>The more books</mark> you read, <mark>the better</mark> you write.</span><span class="hint">▶ 和訳</span><span class="t">たくさんの本を読めば読むほど、文章がうまくなる。</span></li>
+        <li><span class="s en"><mark>The sooner, the better.</mark></span><span class="hint">▶ 和訳</span><span class="t">早ければ早いほどよい。（S ＋ V を省略した決まり文句）</span></li>
+      </ul>
+      <div class="ng-box"><div class="ng-h">よくある間違い</div>
+        「より多くの本を読む」は〈the more ＋名詞〉をひとかたまりで前に出す。<br>
+        <span class="en">✕ The more you read books, …</span> → <span class="en">○ <b>The more books</b> you read, …</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="kp" id="k102">
+    <div class="kp-head"><span class="kp-num">10-2</span><h3>原級・最上級を使った表現</h3></div>
+    <div class="card">
+      <h4>倍数表現〈X times as ＋ 原級 ＋ as ～〉</h4>
+      <div class="point">「～の X 倍…」は、〈as ＋原級＋ as〉の<b>前に倍数・分数</b>を置く。差を比べた結果、「何倍か」「何分の何か」を表す。</div>
+      <ul class="ex">
+        <li><span class="s en">This park is <mark>three times as large as</mark> that one.</span><span class="hint">▶ 和訳</span><span class="t">この公園はあの公園の3倍の広さだ。</span></li>
+        <li><span class="s en">My dog is <mark>half as big as</mark> yours.</span><span class="hint">▶ 和訳</span><span class="t">私の犬はあなたの犬の半分の大きさだ。</span></li>
+        <li><span class="s en">This river is <mark>about a third as long as</mark> the Tone River.</span><span class="hint">▶ 和訳</span><span class="t">この川は利根川の約3分の1の長さだ。</span></li>
+        <li><span class="s en">He has <mark>twice as many books as</mark> I do.</span><span class="hint">▶ 和訳</span><span class="t">彼は私の2倍の本を持っている。（as many ＋名詞＋ as）</span></li>
+        <li><span class="s en">She drinks <mark>twice as much water as</mark> I do.</span><span class="hint">▶ 和訳</span><span class="t">彼女は私の2倍の水を飲む。（数えられない名詞は much）</span></li>
+      </ul>
+      <table class="tb">
+        <tr><th>2倍</th><td class="en">twice as … as ～</td><td></td></tr>
+        <tr><th>3倍以上</th><td class="en">three times as … as ～</td><td>〈数＋ times〉</td></tr>
+        <tr><th>半分</th><td class="en">half as … as ～</td><td></td></tr>
+        <tr><th>3分の1</th><td class="en">a〔one〕third as … as ～</td><td>分子は数、分母は序数</td></tr>
+        <tr><th>4分の1</th><td class="en">a quarter〔a fourth〕as … as ～</td><td></td></tr>
+        <tr><th>3分の2</th><td class="en">two-thirds as … as ～</td><td>分子が2以上なら分母に -s</td></tr>
+      </table>
+      <div class="ng-box"><div class="ng-h">よくある間違い</div>
+        <span class="en">✕ as half expensive as</span> → <span class="en">○ <b>half as</b> expensive as</span>（倍数は必ず最初の as の前）<br>
+        <span class="en">✕ twice as many as books</span> → <span class="en">○ twice as many <b>books</b> as</span>（名詞は as と as の間）
+      </div>
+      <p class="note">「～の X 倍の大きさ」は名詞を使って言うこともできる。<span class="en">This park is three times <b>the size of</b> that one.</span></p>
+      <p class="note">関連表現：<span class="en">as ～ as possible ／ as ～ as S can</span>「できるだけ～」。<span class="en">Come as soon as possible.</span>（できるだけ早く来て）</p>
+    </div>
+
+    <div class="card">
+      <h4>最上級の文の書き換え</h4>
+      <div class="point">「最も…」は最上級だけでなく、<b>原級や比較級</b>でも表せる。4つの形をセットで覚えよう。</div>
+      <ul class="ex">
+        <li><span class="s en">Mt. Fuji is <mark>the highest</mark> mountain in Japan.</span><span class="hint">▶ 和訳</span><span class="t">富士山は日本でいちばん高い山だ。【最上級】</span></li>
+        <li><span class="s en">= Mt. Fuji is <mark>higher than any other mountain</mark> in Japan.</span><span class="hint">▶ 和訳</span><span class="t">富士山は日本の他のどの山よりも高い。【比較級】</span></li>
+        <li><span class="s en">= <mark>No other mountain</mark> in Japan is <mark>higher than</mark> Mt. Fuji.</span><span class="hint">▶ 和訳</span><span class="t">日本の他のどの山も富士山より高くない。【比較級】</span></li>
+        <li><span class="s en">= <mark>No other mountain</mark> in Japan is <mark>as high as</mark> Mt. Fuji.</span><span class="hint">▶ 和訳</span><span class="t">日本の他のどの山も富士山ほど高くない。【原級】</span></li>
+      </ul>
+      <table class="tb">
+        <tr><th class="en">A … the ＋最上級</th><td>A がいちばん…</td></tr>
+        <tr><th class="en">A … 比較級 than any other ＋<u>単数名詞</u></th><td>A は他のどの～よりも…</td></tr>
+        <tr><th class="en">No (other) ＋単数名詞 … 比較級 than A</th><td>A より…な～はない</td></tr>
+        <tr><th class="en">No (other) ＋単数名詞 … as〔so〕＋原級＋ as A</th><td>A ほど…な～はない</td></tr>
+      </table>
+      <p><b>書き換えの手順</b>（例：<span class="en">Ken runs the fastest in his class.</span>）</p>
+      <div class="steps">
+        <div><b>1</b>比べる集団の名詞（student）を見つける</div>
+        <div><b>2</b>any other / No other のあとに<b>単数</b>で置く</div>
+        <div><b>3</b>最上級を比較級（faster）か原級（as fast as）に</div>
+      </div>
+      <ul class="ex">
+        <li><span class="s en">Ken runs faster than any other student in his class.</span><span class="hint">▶ 和訳</span><span class="t">ケンはクラスの他のどの生徒よりも速く走る。</span></li>
+        <li><span class="s en">No other student in his class runs as fast as Ken.</span><span class="hint">▶ 和訳</span><span class="t">クラスの他のどの生徒もケンほど速く走らない。</span></li>
+      </ul>
+      <div class="ng-box"><div class="ng-h">よくある間違い</div>
+        <span class="en">✕ than any other <s>students</s></span> → <span class="en">○ than any other <b>student</b></span>（any other / no other のあとは単数名詞）
+      </div>
+      <div class="point">〈No other ＋名詞〉の代わりに <b>nothing（もの）</b>、<b>no one / nobody（人）</b>も使える。</div>
+      <ul class="ex">
+        <li><span class="s en"><mark>Nothing</mark> is <mark>more important than</mark> health.</span><span class="hint">▶ 和訳</span><span class="t">健康ほど大切なものはない。</span></li>
+        <li><span class="s en"><mark>Nothing</mark> is <mark>as important as</mark> health.</span><span class="hint">▶ 和訳</span><span class="t">健康ほど大切なものはない。（原級）</span></li>
+        <li><span class="s en">Health is <mark>more important than anything else</mark>.</span><span class="hint">▶ 和訳</span><span class="t">健康は他の何よりも大切だ。（than anything else）</span></li>
+        <li><span class="s en"><mark>No one</mark> in our class sings <mark>better than</mark> Judy.</span><span class="hint">▶ 和訳</span><span class="t">クラスでジュディーより上手に歌える人はいない。</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>最上級を使った表現</h4>
+      <div class="point">「断然・群を抜いて」と最上級を強めるときは、〈the ＋最上級〉の前に <b>much</b> や <b>by far</b> を置く。</div>
+      <ul class="ex">
+        <li><span class="s en">Emi is <mark>by far the best</mark> swimmer in our class.</span><span class="hint">▶ 和訳</span><span class="t">エミはクラスで断然いちばん泳ぎがうまい。</span></li>
+        <li><span class="s en">This is <mark>much the most popular</mark> shop in town.</span><span class="hint">▶ 和訳</span><span class="t">ここは町で断然いちばん人気のある店だ。</span></li>
+        <li><span class="s en">This is <mark>the very best</mark> pizza I've ever had.</span><span class="hint">▶ 和訳</span><span class="t">これは今まで食べた中でまさに最高のピザだ。（very は the のあとに置く）</span></li>
+      </ul>
+      <table class="tb">
+        <tr><th>強調語</th><th>位置</th><th>例</th></tr>
+        <tr><td class="en">by far / much</td><td>the の<b>前</b></td><td class="en">by far the best</td></tr>
+        <tr><td class="en">very</td><td>the の<b>後</b>（最上級の直前）</td><td class="en">the very best</td></tr>
+      </table>
+      <p class="note">very は most と同時に使わない。<span class="en">✕ the very most popular</span></p>
+      <div class="point">「X番目に…」は〈<b>the ＋序数詞＋最上級</b>〉。</div>
+      <ul class="ex">
+        <li><span class="s en">Osaka is <mark>the second largest</mark> city in Japan.</span><span class="hint">▶ 和訳</span><span class="t">大阪は日本で2番目に大きい都市だ。</span></li>
+        <li><span class="s en">She is <mark>the third tallest</mark> girl in her class.</span><span class="hint">▶ 和訳</span><span class="t">彼女はクラスで3番目に背の高い女の子だ。</span></li>
+        <li><span class="s en">What is <mark>the second most difficult</mark> language in the world?</span><span class="hint">▶ 和訳</span><span class="t">世界で2番目に難しい言語は何ですか。（most 型も the second most ～）</span></li>
+      </ul>
+      <div class="ng-box"><div class="ng-h">よくある間違い</div>
+        <span class="en">✕ the second <s>taller</s></span> → <span class="en">○ the second <b>tallest</b></span>　／　<span class="en">✕ the <s>two</s> highest</span> → <span class="en">○ the <b>second</b> highest</span>
+      </div>
+      <div class="point">「最も…なものの1つ」は〈<b>one of the ＋最上級＋複数名詞</b>〉。</div>
+      <ul class="ex">
+        <li><span class="s en">Kyoto is <mark>one of the most beautiful cities</mark> in Japan.</span><span class="hint">▶ 和訳</span><span class="t">京都は日本で最も美しい都市の1つだ。（cities と複数形）</span></li>
+      </ul>
+    </div>
+  </section>
+  <a class="go-drill" href="#l10-drill"><span>Lesson 10 の問題に進む →</span><small>Basic・Standard・応用</small></a>
+</div>
+
+<!-- ================= Drills ================= -->
+<div class="view" id="v-l9-drill" data-accent="l9">
+  <div class="hero"><div class="kicker">LESSON 9 ・ 問題集</div><h2>分詞・分詞構文の問題</h2><p>答えを入力して「答え合わせ」。解説もすぐ読めます。進み具合はこのブラウザに保存されます。</p></div>
+  <div id="l9-box"></div>
+</div>
+<div class="view" id="v-l10-drill" data-accent="l10">
+  <div class="hero"><div class="kicker">LESSON 10 ・ 問題集</div><h2>比較の問題</h2><p>答えを入力して「答え合わせ」。解説もすぐ読めます。進み具合はこのブラウザに保存されます。</p></div>
+  <div id="l10-box"></div>
+</div>
+<div class="view" id="v-review" data-accent="rev">
+  <div class="hero"><div class="kicker">LESSON 9–10 ・ 総合</div><h2>まとめテスト</h2><p>2つのレッスンが混ざった総仕上げ。解説を見ずに挑戦してみよう。</p></div>
+  <div id="rev-box"></div>
+</div>
+</main>
+<div class="foot">配布テキスト（Lesson 9・10）の学習項目をもとに作成した学習用ページです。例文・問題はこのページ用に作り直したものです。</div>
+
+<script>
+/* ===== 問題データ =====
+ type: choice {jp,s(英文: ___ が選択肢の位置),o[],a(index),e}
+       fill   {jp,s('___'が空所),a[[正解候補],...],g(ヒント語),e}
+       order  {jp,pre,post,c[],a[正解文...],e, extra(不要語あり)}
+       fix    {jp?,s,w(誤りの語index),a[修正候補],full,e}
+       write  {jp,m[模範解答],e}
+       passage{t,h}
+*/
+const DATA = {
+ "l9-box":[
+  {sec:"9-1 補語になる分詞",lvl:"Basic",id:"9a",items:[
+   {type:"choice",jp:"祖母はソファーで横になって眠っていました。",s:"My grandmother lay ___ on the sofa.",o:["sleeps","sleeping","slept"],a:1,e:"lie ＋ 現在分詞で「～しながら横になっている」。祖母が眠っている（能動）ので現在分詞。"},
+   {type:"choice",jp:"その少女は両親に囲まれて立っていました。",s:"The girl stood ___ by her parents.",o:["surround","surrounding","surrounded"],a:2,e:"少女は「囲まれて」いる（受動）ので過去分詞。by ～ がヒント。"},
+   {type:"choice",jp:"子どもたちは笑いながら部屋に駆け込んできました。",s:"The children came ___ into the room.",o:["laugh","laughing","laughed"],a:1,e:"come ＋ 現在分詞「～しながらやって来る」。"},
+   {type:"fill",jp:"お待たせしてすみません。",s:"I'm sorry to keep you ___ .",g:"wait",a:[["waiting"]],e:"keep ＋ O ＋ 現在分詞。you が「待っている」（能動）ので waiting。"},
+   {type:"fill",jp:"彼はエンジンをかけっぱなしにしておきました。",s:"He left the engine ___ .",g:"run",a:[["running"]],e:"leave ＋ O ＋ 現在分詞「O を～したままにする」。エンジンが動いている（能動）。run の -ing は n を重ねる。"},
+   {type:"fill",jp:"目が覚めると、ドアに鍵がかかっているのに気づきました。",s:"When I woke up, I found the door ___ .",g:"lock",a:[["locked"]],e:"find ＋ O ＋ 過去分詞。ドアは「鍵をかけられている」（受動）。"},
+   {type:"fill",jp:"私は駅で財布を盗まれました。",s:"I had my wallet ___ at the station.",a:[["stolen"]],e:"have ＋ O ＋ 過去分詞で「O を～される」（被害）。steal - stole - stolen。"},
+   {type:"fill",jp:"歯医者で歯を診てもらいました。",s:"I had my teeth ___ at the dentist's.",g:"check",a:[["checked","examined"]],e:"have ＋ O ＋ 過去分詞で「O を～してもらう」（依頼）。"},
+   {type:"fill",jp:"騒音がひどくて、私の声は届きませんでした。",s:"It was so noisy that I couldn't make myself ___ .",a:[["heard"]],e:"make oneself heard「自分の声を聞こえるようにする」。"},
+  ]},
+  {sec:"9-1 補語になる分詞",lvl:"Standard",id:"9b",items:[
+   {type:"order",jp:"姉は昨日、髪を切ってもらいました。",pre:"My sister",post:"yesterday.",c:["cut","had","her hair"],a:["had her hair cut"],e:"have ＋ O ＋ 過去分詞。cut は原形・過去・過去分詞すべて cut。"},
+   {type:"order",jp:"彼は窓の外を見ながら立っていました。",pre:"He",post:".",c:["looking","out of","stood","the window"],a:["stood looking out of the window"],e:"stand ＋ 現在分詞「～しながら立っている」。"},
+   {type:"order",jp:"留学生は英語で自分の考えをわかってもらうことができました。",pre:"The exchange student was able to",post:"in English.",c:["herself","make","understood"],a:["make herself understood"],e:"make oneself understood「自分の言うことをわかってもらう」。"},
+   {type:"fix",s:"She kept her son wait in the car.",w:4,a:["waiting"],full:"She kept her son waiting in the car.",e:"keep ＋ O ＋ 分詞。息子が「待っている」ので現在分詞 waiting。原形は使えない。"},
+   {type:"fix",s:"When I came back, I found my bike steal.",w:8,a:["stolen"],full:"When I came back, I found my bike stolen.",e:"自転車は「盗まれた」（受動）状態なので過去分詞 stolen。"},
+  ]},
+  {sec:"9-2 分詞構文",lvl:"Basic",id:"9c",items:[
+   {type:"choice",jp:"先生を見ると、生徒たちは静かになりました。",s:"___ their teacher, the students became quiet.",o:["Saw","Seeing","Seen"],a:1,e:"生徒たちが「見る」（能動）ので現在分詞で始まる分詞構文。"},
+   {type:"choice",jp:"やさしい英語で書かれているので、この雑誌は読みやすい。",s:"___ in easy English, this magazine is easy to read.",o:["Writing","Wrote","Written"],a:2,e:"雑誌は「書かれている」（受動）。(Being) written の Being が省略された形。"},
+   {type:"choice",jp:"疲れていたので、私は早く寝ました。",s:"___ tired, I went to bed early.",o:["Be","Being","Been"],a:1,e:"As I was tired → Being tired。be 動詞の文は Being で始める。"},
+   {type:"fill",jp:"上空から見ると、その島はハートの形に見えます。",s:"___ from above, the island looks like a heart.",g:"see",a:[["seen"]],e:"島は「見られる」側なので過去分詞 Seen。"},
+   {type:"fill",jp:"彼女は手を振りながら去っていきました。",s:"She walked away, ___ her hand.",g:"wave",a:[["waving"]],e:"文末の分詞構文で付帯状況（～しながら）。"},
+   {type:"choice",jp:"ほぼ同じ意味になるように選びなさい。<br><span class='en'>Walking along the beach, I found a beautiful shell.</span>",s:"___ I was walking along the beach, I found a beautiful shell.",o:["While","If","Though"],a:0,e:"「浜辺を歩いているときに」＝時。進行形と相性がよいのは while。"},
+   {type:"choice",jp:"ほぼ同じ意味になるように選びなさい。<br><span class='en'>Turning left at the corner, you'll find the post office.</span>",s:"___ you turn left at the corner, you'll find the post office.",o:["Because","If","Though"],a:1,e:"主節が未来（you'll find）なので「～すれば」＝条件。"},
+  ]},
+  {sec:"9-2 分詞構文",lvl:"Standard",id:"9d",items:[
+   {type:"fill",jp:"書き換え：<span class='en'>As he was sick, he stayed home.</span>",s:"___ sick, he stayed home.",a:[["being"]],e:"接続詞と主語を消し、was → Being。"},
+   {type:"fill",jp:"書き換え：<span class='en'>The train left Tokyo at nine and arrived in Osaka at noon.</span>",s:"The train left Tokyo at nine, ___ in Osaka at noon.",a:[["arriving"]],e:"「～して、そして…」の連続を表す分詞構文。and を消して arriving。"},
+   {type:"fill",jp:"書き換え：<span class='en'>When it is seen from the hill, the town looks beautiful.</span>",s:"___ from the hill, the town looks beautiful.",a:[["seen"]],e:"受動態 is seen → (Being) Seen。"},
+   {type:"order",jp:"公園の中央にあるので、その噴水は人気の待ち合わせ場所です。",pre:"",post:"the park, the fountain is a popular meeting place.",c:["in","located","of","the center"],a:["located in the center of"],e:"be located「位置している」の受動の分詞構文。Being が省略されて Located で始まる。"},
+   {type:"order",jp:"弟は音楽を聞きながら宿題をしました。",pre:"My brother did his homework,",post:".",c:["listening","music","to"],a:["listening to music"],e:"文末の付帯状況。"},
+   {type:"fix",s:"Seeing from the hill, the town looks beautiful.",w:0,a:["seen"],full:"Seen from the hill, the town looks beautiful.",e:"町は「見られる」側。Seeing だと「町が見る」ことになってしまう。"},
+  ]},
+  {sec:"9-3 否定・完了・重要表現",lvl:"Basic",id:"9e",items:[
+   {type:"fill",jp:"何と言ってよいかわからなかったので、私は黙っていました。",s:"___ ___ what to say, I kept silent.",a:[["not"],["knowing"]],e:"否定の分詞構文は分詞の直前に not。"},
+   {type:"fill",jp:"十分なお金を持っていなかったので、その本は買えませんでした。",s:"___ ___ enough money, I couldn't buy the book.",a:[["not"],["having"]],e:"As I didn't have … → Not having …。"},
+   {type:"choice",jp:"宿題を終えてから、テレビを見ました。",s:"___ my homework, I watched TV.",o:["Finished","Having finished","Being finished"],a:1,e:"宿題を終えたのはテレビを見るより前 → 完了形の分詞構文。"},
+   {type:"choice",jp:"その映画を以前に見たことがあったので、結末を知っていました。",s:"___ the movie before, I knew the ending.",o:["Seeing","Seen","Having seen"],a:2,e:"「以前に見た」は主節（knew）より前の時 → Having seen。"},
+   {type:"choice",jp:"一度も海外に行ったことがなかったので、彼は緊張していました。",s:"___ abroad before, he was nervous.",o:["Not having been","Having not been","Not being"],a:0,e:"完了形の否定は Not having ＋ 過去分詞。"},
+   {type:"fill",jp:"彼は目を閉じたまま音楽を聞いていました。",s:"He was listening to music ___ his eyes ___ .",a:[["with"],["closed","shut"]],e:"with ＋名詞＋過去分詞。目は「閉じられている」。"},
+   {type:"fill",jp:"彼女は髪を風になびかせて走りました。",s:"She ran ___ her hair ___ in the wind.",g:"fly",a:[["with"],["flying"]],e:"髪が「なびいている」（能動）ので現在分詞。"},
+   {type:"fill",jp:"今週末、釣りに行こう。",s:"Let's ___ ___ this weekend.",a:[["go"],["fishing"]],e:"go ～ing「～しに行く」。"},
+   {type:"fill",jp:"母は夕食の準備で忙しい。",s:"My mother is ___ ___ dinner.",a:[["busy"],["preparing","making","cooking"]],e:"be busy ～ing。busy to do は誤り。"},
+   {type:"fill",jp:"彼は日曜日をテレビゲームをして過ごしました。",s:"He ___ Sunday ___ video games.",a:[["spent"],["playing"]],e:"spend ＋時間＋ ～ing。"},
+   {type:"fill",jp:"公園でサッカーをしている少年が何人かいました。",s:"___ were some boys ___ soccer in the park.",a:[["there"],["playing"]],e:"There ＋ be ＋名詞＋ ～ing。"},
+  ]},
+  {sec:"9-3 否定・完了・重要表現",lvl:"Standard",id:"9f",items:[
+   {type:"fill",jp:"書き換え：<span class='en'>Because I had lived in Kyoto for years, I knew the city well.</span>",s:"___ ___ in Kyoto for years, I knew the city well.",a:[["having"],["lived"]],e:"住んでいたのは「知っていた」より前 → Having lived。"},
+   {type:"fill",jp:"書き換え：<span class='en'>As we could not find a taxi, we walked to the hotel.</span>",s:"___ ___ able to find a taxi, we walked to the hotel.",a:[["not"],["being"]],e:"could not find ≒ was not able to find → Not being able to find。"},
+   {type:"order",jp:"朝食を食べていなかったので、私はおなかがすいていました。",pre:"",post:", I was hungry.",c:["breakfast","eaten","having","not"],a:["not having eaten breakfast"],e:"Not having ＋ 過去分詞。not は having の前。"},
+   {type:"order",jp:"図書館で勉強している間に、私は眠ってしまいました。",pre:"",post:", I fell asleep.",c:["in","studying","the library","while"],a:["while studying in the library"],e:"接続詞 while を残した分詞構文で、意味をはっきりさせる。"},
+   {type:"write",jp:"何をすべきかわからず、私は先生に助けを求めた。（分詞構文を使って）",m:["Not knowing what to do, I asked my teacher for help."],e:"「わからなかったので」＝Not knowing。ask ＋人＋ for help「人に助けを求める」。"},
+  ]},
+  {sec:"Lesson 9 応用",lvl:"Exercise",id:"9g",items:[
+   {type:"fix",s:"Mike listened to her with his arms fold.",w:7,a:["folded"],full:"Mike listened to her with his arms folded.",e:"腕は「組まれている」→ with ＋名詞＋過去分詞。"},
+   {type:"fix",s:"There were many people wait for the bus.",w:4,a:["waiting"],full:"There were many people waiting for the bus.",e:"There ＋ be ＋名詞＋ ～ing。"},
+   {type:"fix",s:"Finished dinner, we went for a walk.",w:0,a:["having finished"],full:"Having finished dinner, we went for a walk.",e:"「夕食を終えてから」＝主節より前の時 → Having finished。Finished だと「夕食が終えられる」の意味になってしまう。"},
+   {type:"fix",s:"The man sat on the bench, read a newspaper.",w:6,a:["reading"],full:"The man sat on the bench, reading a newspaper.",e:"文末の分詞構文（付帯状況「～しながら」）。動詞の原形 read をそのまま続けることはできない。"},
+   {type:"write",jp:"下線部を分詞構文で書き換えなさい。<br><span class='en'><u>While she was walking in the park</u>, she met an old friend.</span>",m:["Walking in the park, she met an old friend.","While walking in the park, she met an old friend."],e:"接続詞・主語を消し、was walking → Walking。"},
+   {type:"write",jp:"父は車を修理してもらいました。",m:["My father had his car repaired.","My father had his car fixed.","My father got his car repaired."],e:"have〔get〕＋ O ＋ 過去分詞。"},
+   {type:"passage",t:"次の英文を読んで、あとの問いに答えなさい。",h:"Last summer, Ken visited his grandparents' village in Nagano. <span class='num'>①</span><u>Arriving at the station, he saw his grandfather waving his hand.</u> The village was small and quiet, surrounded by high mountains. Every morning, Ken went fishing in the river with his grandfather.<br>&emsp;One afternoon, <span class='num'>②</span>（何をすればいいかわからなかったので）, Ken asked his grandmother for advice. She smiled and said, “Why don't you help me in the field?” So he spent the whole afternoon picking tomatoes. <span class='num'>③</span><u>Having worked hard all day</u>, he felt tired but happy.<br>&emsp;On the last night, they sat on the porch talking about many things, with the stars shining above them."},
+   {type:"write",jp:"下線部①を日本語に直しなさい。",m:["駅に着くと、彼は祖父が手を振っているのが見えた。"],e:"Arriving ～ は「時」の分詞構文。see ＋ O ＋ 現在分詞「O が～しているのが見える」。"},
+   {type:"write",jp:"②のカッコ内の日本語を、分詞構文を使って英語に直しなさい。",m:["Not knowing what to do"],e:"否定の分詞構文。what to do「何をすればよいか」。"},
+   {type:"choice",jp:"下線部③とほぼ同じ意味になるものを選びなさい。",s:"___ , he felt tired but happy.",o:["If he works hard all day","Because he had worked hard all day","Though he works hard all day"],a:1,e:"完了形の分詞構文 → 主節（felt）より前。意味は理由「一日中働いたので」。"},
+   {type:"choice",jp:"本文の内容に合うものを選びなさい。",s:"___",o:["Ken went fishing alone every morning.","Ken spent the afternoon picking tomatoes.","Ken's grandmother didn't give him any advice."],a:1,e:"he spent the whole afternoon picking tomatoes とある。fishing は祖父と一緒。"},
+  ]},
+ ],
+ "l10-box":[
+  {sec:"10-1 比較級を使った表現",lvl:"Basic",id:"10a",items:[
+   {type:"choice",jp:"兄は私より3歳年上です。",s:"My brother is three years ___ than I.",o:["old","older","oldest"],a:1,e:"具体的な差（three years）は比較級の前に置く。"},
+   {type:"choice",jp:"この箱はあの箱よりずっと重い。",s:"This box is ___ heavier than that one.",o:["very","much","more"],a:1,e:"比較級を強めるのは much / far / a lot。very は使えない。"},
+   {type:"choice",jp:"今日は昨日より少し暖かい。",s:"It is ___ warmer today than yesterday.",o:["a little","a few","little"],a:0,e:"「少し」の差は a little / a bit。"},
+   {type:"choice",jp:"この本はあの本ほど面白くない。",s:"This book is ___ interesting than that one.",o:["more","less","fewer"],a:1,e:"less ＋原級＋ than「～ほど…でない」。"},
+   {type:"fill",jp:"だんだん暗くなってきました。",s:"It's getting ___ and ___ .",a:[["darker"],["darker"]],e:"比較級 and 比較級「だんだん…」。"},
+   {type:"fill",jp:"その歌手はますます人気が出ました。",s:"The singer became ___ and ___ popular.",a:[["more"],["more"]],e:"popular は more 型 → more and more popular。"},
+   {type:"fill",jp:"練習すればするほど、上手になります。",s:"___ more you practice, ___ ___ you'll become.",a:[["the"],["the"],["better"]],e:"the ＋比較級 ～, the ＋比較級 …。good の比較級は better。"},
+   {type:"fill",jp:"高く登れば登るほど、寒くなりました。",s:"The higher we climbed, ___ ___ it became.",a:[["the"],["colder"]],e:"後半も the ＋比較級 ＋ S ＋ V。"},
+  ]},
+  {sec:"10-1 比較級を使った表現",lvl:"Standard",id:"10b",items:[
+   {type:"fill",jp:"この塔はあの塔より約100メートル高い。",s:"This tower is about 100 ___ ___ ___ that one.",a:[["meters"],["taller","higher"],["than"]],e:"差（100 meters）＋比較級＋ than。"},
+   {type:"fill",jp:"書き換え：<span class='en'>Ken is less tall than Tom.</span>",s:"Ken is ___ ___ tall ___ Tom.",a:[["not"],["as","so"],["as"]],e:"less ＋原級＋ than ≒ not as〔so〕＋原級＋ as。"},
+   {type:"order",jp:"彼の英語はますます上手になっています。",pre:"His English is",post:".",c:["and","better","better","getting"],a:["getting better and better"],e:"get ＋比較級 and 比較級。"},
+   {type:"order",jp:"彼女のことを知れば知るほど、好きになりました。",pre:"The more I knew about her,",post:".",c:["her","I","liked","more","the"],a:["the more i liked her"],e:"the ＋比較級＋ S ＋ V。"},
+   {type:"order",jp:"本をたくさん読めば読むほど、語彙が増えます。",pre:"",post:", the larger your vocabulary becomes.",c:["books","more","read","the","you"],a:["the more books you read"],e:"〈the more ＋名詞〉は切り離さない。"},
+   {type:"fix",s:"This question is less easier than that one.",w:4,a:["easy"],full:"This question is less easy than that one.",e:"less のあとは原級。"},
+   {type:"fix",s:"It is very colder today than yesterday.",w:2,a:["much","far","a lot"],full:"It is much colder today than yesterday.",e:"very は比較級を強められない。much / far / a lot を使う。"},
+  ]},
+  {sec:"10-2 原級・最上級を使った表現",lvl:"Basic",id:"10c",items:[
+   {type:"fill",jp:"この部屋はあの部屋の3倍の広さです。",s:"This room is ___ ___ as large as that one.",a:[["three"],["times"]],e:"3倍以上は〈数＋ times〉＋ as … as。"},
+   {type:"fill",jp:"私の犬はあなたの犬の半分の大きさです。",s:"My dog is ___ ___ big ___ yours.",a:[["half"],["as"],["as"]],e:"half as … as。「as half」の語順にしない。"},
+   {type:"fill",jp:"その湖はこの湖の3分の1の深さです。",s:"That lake is ___ ___ as deep as this one.",a:[["one","a"],["third"]],e:"分数「3分の1」は a〔one〕third。"},
+   {type:"fill",jp:"彼は私の2倍の本を持っています。",s:"He has ___ as ___ books as I do.",a:[["twice"],["many"]],e:"数えられる名詞は as many ＋名詞＋ as。"},
+   {type:"fill",jp:"エミはクラスの他のどの生徒よりも速く走れます。",s:"Emi can run faster than ___ ___ student in her class.",a:[["any"],["other"]],e:"比較級＋ than any other ＋単数名詞。"},
+   {type:"fill",jp:"クラスの他のどの生徒もエミより速く走れません。",s:"___ other student in her class can run ___ than Emi.",a:[["no"],["faster"]],e:"No other ＋単数名詞＋比較級＋ than A。"},
+   {type:"fill",jp:"健康ほど大切なものはありません。",s:"___ is ___ important than health.",a:[["nothing"],["more"]],e:"Nothing is ＋比較級＋ than A「A ほど…なものはない」。"},
+   {type:"choice",jp:"これは群を抜いて最高の映画です。",s:"This is ___ the best movie.",o:["very","by far","more"],a:1,e:"最上級を強める by far / much は the の前。"},
+   {type:"choice",jp:"日本で2番目に高い山は何ですか。",s:"What is the ___ highest mountain in Japan?",o:["two","twice","second"],a:2,e:"the ＋序数詞＋最上級。"},
+   {type:"choice",jp:"これは今まで食べた中でまさに最高のケーキです。",s:"This is the ___ best cake I've ever had.",o:["much","far","very"],a:2,e:"very は the のあと、最上級の直前に置く（the very best）。"},
+  ]},
+  {sec:"10-2 原級・最上級を使った表現",lvl:"Standard",id:"10d",items:[
+   {type:"order",jp:"東京は日本の他のどの都市よりも大きい。",pre:"Tokyo is",post:"city in Japan.",c:["any","larger","other","than"],a:["larger than any other"],e:"比較級＋ than any other ＋単数名詞。"},
+   {type:"order",jp:"この橋はあの橋の約2倍の長さです。",pre:"This bridge is about",post:"that one.",c:["as","as","long","twice"],a:["twice as long as"],e:"倍数＋ as ＋原級＋ as。"},
+   {type:"order",jp:"世界で3番目に大きい国はどこですか。",pre:"Which is",post:"in the world?",c:["country","largest","the","third"],a:["the third largest country"],e:"the ＋序数詞＋最上級＋名詞。"},
+   {type:"order",jp:"私はリサの3分の1しか本を持っていません。",pre:"I have only",post:"Lisa.",c:["as","as","books","many","a","third"],a:["a third as many books as"],e:"分数＋ as many ＋名詞＋ as。"},
+   {type:"fix",s:"He is taller than any other students in his class.",w:6,a:["student"],full:"He is taller than any other student in his class.",e:"any other のあとは単数名詞。"},
+   {type:"fix",s:"This bag is as half expensive as that one.",w:[3,4],a:["half as"],full:"This bag is half as expensive as that one.",e:"倍数・分数は最初の as の前（half as … as）。誤りの語 as half を half as に。"},
+   {type:"write",jp:"書き換え（原級を使って）：<span class='en'>Bob is the fastest runner in our class.</span><br>→ No other ～",m:["No other runner in our class is as fast as Bob.","No other runner in our class runs as fast as Bob."],e:"No other ＋単数名詞 … as ＋原級＋ as A。"},
+   {type:"write",jp:"書き換え（比較級を使って）：<span class='en'>Bob is the fastest runner in our class.</span><br>→ No other ～",m:["No other runner in our class is faster than Bob."],e:"No other ＋単数名詞 … 比較級＋ than A。"},
+   {type:"write",jp:"時間ほど貴重なものはない。（比較級を使って）",m:["Nothing is more precious than time.","Nothing is more valuable than time."],e:"Nothing is ＋比較級＋ than A。原級なら Nothing is as precious as time."},
+  ]},
+  {sec:"Lesson 10 応用",lvl:"Exercise",id:"10e",items:[
+   {type:"fill",jp:"書き換え：<span class='en'>Mt. Fuji is the highest mountain in Japan.</span>",s:"Mt. Fuji is ___ than ___ ___ mountain in Japan.",a:[["higher","taller"],["any"],["other"]],e:"最上級 → 比較級＋ than any other ＋単数名詞。"},
+   {type:"fill",jp:"書き換え：<span class='en'>Julia came to school the earliest of all the students.</span>",s:"Julia came to school ___ ___ ___ other student.",a:[["earlier"],["than"],["any"]],e:"副詞の最上級も同じように書き換えられる。early - earlier - earliest。"},
+   {type:"write",jp:"指示に従って書き換えなさい。<br><span class='en'>I have as many CDs as Mary.</span>（「メアリーの4分の1の数のCDを持っている」という文に）",m:["I have a quarter as many CDs as Mary.","I have one-fourth as many CDs as Mary.","I have a fourth as many CDs as Mary."],e:"4分の1＝a quarter / a〔one〕fourth。分数は as many の前。"},
+   {type:"write",jp:"指示に従って書き換えなさい。<br><span class='en'>She is the most famous actor in Japan.</span>（「断然」と最上級を強めた文に）",m:["She is by far the most famous actor in Japan.","She is much the most famous actor in Japan."],e:"by far / much を the の前に。"},
+   {type:"passage",t:"次の英文を読んで、あとの問いに答えなさい。",h:"Mt. Everest is the highest mountain in the world. It is about 8,849 meters high, more than twice as high as Mt. Fuji. <span class='num'>①</span>（登れば登るほど、空気は薄くなります）, so climbers must be very careful.<br>&emsp;In the past, only a few people could reach the top. Now, however, more and more people try to climb it every year. <span class='num'>②</span><u>No other mountain in the world is as famous as Everest.</u><br>&emsp;This popularity has caused a problem. Many climbers leave things behind, and there is more garbage on the mountain every year. The situation is getting <span class='num'>③</span>［　　　］. Some people say that we should limit the number of climbers."},
+   {type:"write",jp:"①のカッコ内の日本語を英語に直しなさい。（the ＋比較級を使って）",m:["The higher you climb, the thinner the air becomes.","The higher you go, the thinner the air gets."],e:"the ＋比較級＋ S ＋ V, the ＋比較級＋ S ＋ V。「薄い空気」は thin air。"},
+   {type:"write",jp:"下線部②を日本語に直しなさい。",m:["世界の他のどの山もエベレストほど有名ではない。（＝エベレストは世界でいちばん有名な山だ。）"],e:"No other ＋単数名詞 … as ＋原級＋ as A は、実質的に最上級の意味。"},
+   {type:"choice",jp:"③に入る最も適切な語句を選びなさい。",s:"The situation is getting ___ .",o:["better and better","worse and worse","less and less"],a:1,e:"ゴミが毎年増える → 状況は「ますます悪く」なっている。bad - worse - worst。"},
+   {type:"choice",jp:"本文の内容に合うものを選びなさい。",s:"___",o:["Mt. Everest is less than twice as high as Mt. Fuji.","Fewer people climb Mt. Everest now than in the past.","Some people think the number of climbers should be limited."],a:2,e:"最後の文 Some people say that we should limit the number of climbers. と一致。"},
+  ]},
+ ],
+ "rev-box":[
+  {sec:"まとめテスト 1　空所補充",lvl:"Lesson 9–10",id:"ra",items:[
+   {type:"fill",jp:"目が覚めると、私は床の上に寝ていました。",s:"When I woke up, I found myself ___ on the floor.",g:"lie",a:[["lying"]],e:"find oneself ～ing「気づくと～していた」。lie の -ing は lying。"},
+   {type:"fill",jp:"彼女は先週、家にペンキを塗ってもらいました。",s:"She had her house ___ last week.",a:[["painted"]],e:"have ＋ O ＋ 過去分詞「～してもらう」。"},
+   {type:"fill",jp:"物価はどんどん高くなっています。",s:"Prices are getting ___ and ___ .",a:[["higher"],["higher"]],e:"比較級 and 比較級。"},
+   {type:"fill",jp:"私は弟より10分早く家を出ました。",s:"I left home ten minutes ___ ___ my brother did.",a:[["earlier"],["than"]],e:"差（ten minutes）＋比較級＋ than。"},
+   {type:"fill",jp:"早く寝れば寝るほど、それだけ早く起きられます。",s:"___ earlier you go to bed, ___ earlier you can get up.",a:[["the"],["the"]],e:"the ＋比較級 ～, the ＋比較級 …。"},
+   {type:"fill",jp:"この問題は前の問題ほど難しくありません。",s:"This question is ___ difficult ___ the last one.",a:[["less"],["than"]],e:"less ＋原級＋ than。"},
+  ]},
+  {sec:"まとめテスト 2　書き換え",lvl:"Lesson 9–10",id:"rb",items:[
+   {type:"fill",jp:"<span class='en'>When it is seen from the tower, the city looks like a toy town.</span>",s:"___ from the tower, the city looks like a toy town.",a:[["seen"]],e:"受動の分詞構文。Being は省略。"},
+   {type:"fill",jp:"<span class='en'>As I hadn't read the book, I couldn't join the discussion.</span>",s:"___ ___ ___ the book, I couldn't join the discussion.",a:[["not"],["having"],["read"]],e:"否定＋完了形の分詞構文。"},
+   {type:"fill",jp:"<span class='en'>She called me and said she would be late.</span>",s:"She called me, ___ she would be late.",a:[["saying"]],e:"連続の分詞構文（and said → saying）。"},
+   {type:"fill",jp:"<span class='en'>This is the tallest building in the city.</span>",s:"No other building in the city is ___ ___ this one.",a:[["taller"],["than"]],e:"No other ＋単数名詞＋比較級＋ than A。"},
+  ]},
+  {sec:"まとめテスト 3　誤り訂正・並べ換え",lvl:"Lesson 9–10",id:"rc",items:[
+   {type:"fix",s:"He is the second taller boy in the class.",w:4,a:["tallest"],full:"He is the second tallest boy in the class.",e:"「X番目に…」は the ＋序数詞＋最上級。"},
+   {type:"fix",s:"Why are you just standing there do nothing?",w:6,a:["doing"],full:"Why are you just standing there doing nothing?",e:"stand ＋現在分詞「～しながら立っている」。"},
+   {type:"order",jp:"これは断然いちばん簡単な問題です。（不要な語が1つあります）",pre:"This is",post:".",c:["by far","very","the easiest","question"],a:["by far the easiest question"],e:"by far ＋ the ＋最上級。very は the very easiest の形でしか使えないので不要。",extra:1},
+   {type:"order",jp:"彼女は涙を流しながら手紙を読みました。",pre:"She read the letter",post:"her face.",c:["down","running","tears","with"],a:["with tears running down"],e:"with ＋名詞＋現在分詞。涙が「流れている」（能動）。"},
+   {type:"order",jp:"天気予報を見ていたので、彼は傘を忘れませんでした。（不要な語が1つあります）",pre:"",post:"the umbrella.",c:["having","watched","watching","the weather forecast",",","he","didn't","forget"],a:["having watched the weather forecast , he didn't forget"],e:"予報を見たのは主節より前 → Having watched。watching が不要。",extra:1},
+  ]},
+  {sec:"まとめテスト 4　和文英訳",lvl:"Lesson 9–10",id:"rd",items:[
+   {type:"write",jp:"車を持っていないので、彼は自転車で通学しています。（分詞構文を使って）",m:["Not having a car, he goes to school by bike.","Not having a car, he rides his bike to school."],e:"否定の分詞構文 Not having ～。"},
+   {type:"write",jp:"この町には私たちの町の2倍の人がいます。（This town を主語にして）",m:["This town has twice as many people as our town.","This town has twice as many people as ours."],e:"twice as many ＋名詞＋ as。"},
+   {type:"write",jp:"日本で2番目に長い川は何ですか。",m:["What is the second longest river in Japan?"],e:"the ＋序数詞＋最上級。"},
+   {type:"write",jp:"彼は一日中、部屋の掃除で忙しかった。",m:["He was busy cleaning his room all day."],e:"be busy ～ing。"},
+  ]},
+ ]
+};
+
+const HINTS={
+"9a":["主語の祖母は「眠っている」？それとも「眠らされている」？","少女は自分で囲んでいる？それとも囲まれている？ by ～ に注目。","子どもたちが「笑っている」状態でやって来た。能動か受動か。","keep you ～：you が「待っている」のか「待たされている」のか。","leave ＋ O ＋ 分詞。エンジンは「動いている」。run の -ing 形は n を重ねる。","find ＋ O ＋ 分詞。ドアは鍵を「かけられている」。","have ＋ O ＋ 過去分詞で「～される」。steal - stole - ？","have ＋ O ＋ 過去分詞で「～してもらう」。check を過去分詞に。","make oneself ＋ 過去分詞。「声を聞こえるようにする」→ hear の過去分詞は？"],
+"9b":["have ＋ O ＋ 過去分詞の語順。cut は過去分詞でも形が変わらない。","stand ＋ 現在分詞「～しながら立つ」。look out of ～「～の外を見る」。","make oneself understood の語順。主語は女性なので herself。","息子は「待っている」？ 形がおかしい動詞を探そう。","自転車は「盗まれた」状態。find ＋ O ＋ 分詞の分詞部分を確認。"],
+"9c":["生徒たちが先生を「見る」→ 能動。","雑誌は「書かれている」→ 受動。","As I was tired の was を分詞にすると？","島は「見られる」側。see の過去分詞は？","文末の分詞構文＝「～しながら」。wave の -ing 形は e を取る。","「歩いている間に」＝時。進行形 was walking と相性がよい接続詞は？","主節が you'll find（未来）。「左に曲がれば」は何の意味？"],
+"9d":["接続詞 As と主語 he を消し、was を分詞にする。","「～して、そして…」。and arrived の部分を分詞にする。","it is seen は受動態。Being を省略すると？","be located in ～「～に位置している」。Being を省略して過去分詞で始める。","listen to ～ を現在分詞にして文末に置く。","町は「見る」側？「見られる」側？ 1語目に注目。"],
+"9e":["否定の分詞構文。not は分詞の前？後？","As I didn't have … を否定の分詞構文に。","宿題を終えたのは、テレビを見るより前のこと。","「以前に見たことがあった」は主節 knew より前の時。","完了形の否定。not は having の前？後？","with ＋名詞＋分詞。目は「閉じられている」。","with ＋名詞＋分詞。髪は自分で「なびいている」。fly の -ing 形。","「～しに行く」＝ go ＋ ～ing。","「～するのに忙しい」＝ be busy ＋ ～ing。","「時間を～して過ごす」＝ spend ＋時間＋ ～ing。過去形にするのを忘れずに。","「～している…がいる」は There ＋ be ＋名詞＋ ～ing。"],
+"9f":["住んでいたのは「知っていた」より前 → 完了形の分詞構文。","could not ＝ was not able to。be 動詞を分詞にして not をつける。","Not ＋ having ＋ 過去分詞 ＋ 目的語 の順。","接続詞 while を残した分詞構文。While ＋ ～ing ＋ 場所。","「わからなかったので」→ 否定の分詞構文。「助けを求める」＝ ask ＋人＋ for help。"],
+"9g":["腕は「組まれている」。with ＋名詞＋分詞の分詞部分を確認。","There ＋ be ＋名詞＋ ～ing の形になっている？","夕食を終えたのは散歩より前。文頭の1語を2語に直す。","文の後半に動詞の原形が続いている。「～しながら」の形に。","接続詞と主語を消し、was walking を1語に。","「～してもらう」＝ have ＋ O ＋ 過去分詞。「修理する」は repair / fix。",null,"Arriving ～, は「時」の分詞構文。see ＋ O ＋ ～ing「O が～しているのが見える」。","否定の分詞構文＋ what to do「何をすべきか」。","完了形の分詞構文 → 主節より前のこと。「時」か「理由」で考えよう。","本文の第2段落で、午後に何をしたかを探そう。"],
+"10a":["than があるので比較級。差（three years）はその前。","比較級を「ずっと」と強める語。very は使える？","「少し」の差。a few は数えられる名詞に使う語。","「～ほど…でない」は ○○ ＋原級＋ than。","比較級 and 比較級。dark の比較級は？","popular は -er をつけられない語。","the ＋比較級 ～, the ＋比較級 …。good の比較級は？","後半も the ＋比較級。cold の比較級は？"],
+"10b":["差（100 meters）は比較級の前。tall / high の比較級＋ than。","less ～ than ≒ not ○○ ～ ○○。","get ＋比較級 and 比較級の語順。","後半も the ＋比較級＋ S ＋ V。","〈the more ＋名詞〉はひとかたまり。そのあとに S ＋ V。","less のあとは原級？比較級？","比較級を強められない語が入っている。"],
+"10c":["3倍以上は〈数＋ times〉。","「半分」＝ half。倍数は最初の as の前に置く。","分数「3分の1」は、分子は数、分母は序数。","2倍は twice。数えられる名詞は as ○○ ＋名詞＋ as。","比較級＋ than ○○ ○○ ＋単数名詞。","No other ＋単数名詞＋比較級＋ than ～。fast の比較級。","「～ほど…なものはない」＝ ○○ is ＋比較級＋ than ～。","最上級を「群を抜いて」と強める語句は the の前に置く。","「2番目」は序数詞で。","the のあと、最上級の直前に置ける強調語は？"],
+"10d":["比較級＋ than any other ＋単数名詞の順。","倍数＋ as ＋原級＋ as。","the ＋序数詞＋最上級＋名詞。","分数（a third）＋ as many ＋名詞＋ as。","any other のあとの名詞の数（単数・複数）に注目。","倍数・分数を置く位置が間違っている。","No other ＋単数名詞 … as ＋原級＋ as Bob。","No other ＋単数名詞 … 比較級＋ than Bob。","Nothing is ＋比較級＋ than ～。「貴重な」＝ precious / valuable。"],
+"10e":["最上級 → 比較級＋ than any other ＋単数名詞。","副詞 early の比較級＋ than any ～。","「4分の1」＝ a quarter / one-fourth。分数は as many の前。","「断然」＝ by far / much。the の前に置く。",null,"The ＋比較級＋ you climb, the ＋比較級＋ the air becomes。「薄い」＝ thin。","No other ～ as ＋原級＋ as … は「…ほど～な山はない」→ 最上級の意味。","ゴミが毎年増えている。状況は良くなる？悪くなる？ bad の比較級は？","最後の段落の Some people say ～ に注目。"],
+"ra":["find oneself ～ing「気づくと～していた」。lie の -ing 形は？","have ＋ O ＋ 過去分詞「～してもらう」。","比較級 and 比較級。high の比較級。","差（ten minutes）＋比較級＋ than。early の比較級。","the ＋比較級 ～, the ＋比較級 …。","「～ほど…でない」を less を使って。"],
+"rb":["it is seen は受動態 → Being を省略。","否定＋完了形。Not ＋ having ＋ 過去分詞。read の過去分詞は read。","「電話して、そして言った」＝連続の分詞構文。and said を1語に。","No other ＋単数名詞＋比較級＋ than ～。"],
+"rc":["「X番目に…」は the ＋序数詞＋ ○○級。","stand ＋ ～ing「～しながら立っている」。原形のままの動詞はどれ？","by far ＋ the ＋最上級。very は the very ～ の形でしか使えない。","with ＋名詞＋分詞。涙は自分で「流れている」。","予報を見たのは主節より前 → 完了形の分詞構文。watching と watched、どちらが不要？"],
+"rd":["否定の分詞構文 Not having ～。「自転車で」＝ by bike。","This town has … ＋ twice as many ＋名詞＋ as ～。","the ＋序数詞＋最上級＋ river。","be busy ＋ ～ing。「一日中」＝ all day。"]
+};
+
+const EXP={
+"9a":[
+"①lay は lie（横になる）の過去形。lie ＋分詞で「～しながら横になっている」。②主語の祖母と sleep の関係を考える。祖母は自分で眠っている＝能動 → 現在分詞 sleeping。③sleeps（3単現）や slept（過去形）は動詞なので、すでに動詞 lay がある文には入れられない。<br>注意：lie（横になる）- lay - lain と lay（横たえる）- laid - laid を混同しないこと。",
+"①stand ＋分詞で「～された状態で立っている」。②少女は両親に「囲まれる」側なので受動 → 過去分詞 surrounded。③by her parents（両親によって）は受動態でおなじみの by ～。by が見えたら過去分詞を疑おう。",
+"①come ＋現在分詞で「～しながらやって来る」。②子どもたちは自分で笑っている＝能動 → laughing。<br>類例：come running（走ってくる）、go running（走りに行く）。",
+"①keep ＋ O ＋分詞（O を～の状態にしておく）。O は you。②you は自分で「待っている」ので現在分詞 waiting。直訳は「あなたを待っている状態にしておいてすみません」。<br>決まり文句：I'm sorry to keep you waiting. ／ Sorry to have kept you waiting.",
+"①leave ＋ O ＋分詞「O を～したまま放っておく」。O は the engine。②エンジンは自分で「動いている」→ 現在分詞。run は「（機械が）動く」の意味もある。③つづり：run は〈短母音＋子音字〉で終わるので n を重ねて running。",
+"①find ＋ O ＋分詞「O が～しているのに気づく」。O は the door。②ドアは誰かに「鍵をかけられた」状態 → 過去分詞 locked。<br>注意：「ドアが鍵をかけている」は意味が通らないので locking は✕。",
+"①have ＋ O ＋過去分詞は「O を～してもらう」「O を～される」。②財布を盗まれるのは望んだことではないので「被害」の意味。③steal - stole - stolen。stole は過去形なので入らない。<br>注意：✕ I was stolen my wallet.（人は盗まれない）→ My wallet was stolen. か I had my wallet stolen. と言う。",
+"①have ＋ O ＋過去分詞で「O を～してもらう」（依頼）。②歯は「診てもらう」＝診られる側 → checked（examined でも可）。<br>at the dentist's は at the dentist's office の略で「歯医者で」。",
+"①make oneself heard は「自分（の声）を聞かれる状態にする」→「声を届かせる」。②myself は「聞かれる」側なので過去分詞 heard。<br>so ～ that … can't …「とても～なので…できない」の構文もあわせて確認。"],
+"9b":[
+"①have ＋ O ＋過去分詞の語順：had → her hair（O）→ cut（過去分詞）。②cut は cut - cut - cut と形が変わらないので、過去形か過去分詞かは語順で判断する。<br>注意：My sister cut her hair. だと「自分で切った」意味になる。",
+"①stand ＋現在分詞「～しながら立っている」→ stood looking。②look out of the window「窓の外を見る」をそのまま続ける。<br>語順：動詞（stood）→ 分詞（looking）→ 分詞のあとの語句（out of the window）。",
+"①make oneself understood「自分の言うことをわかってもらう」。②選択肢の herself から、主語は女性。③make ＋ O（herself）＋過去分詞（understood）の SVOC の語順。",
+"①keep ＋ O ＋分詞の形。O は her son。②息子は「待っている」（能動）ので現在分詞 waiting にする。③原形 wait は使役動詞（make / let / have）や知覚動詞のあとなら使えるが、keep のあとでは使えない。",
+"①find ＋ O ＋分詞の形。O は my bike。②自転車は「盗まれた」（受動）→ 過去分詞 stolen。③steal（原形）のままでは文が成り立たない。"],
+"9c":[
+"①カンマの前が分詞構文、後ろが主節（主語 the students）。②生徒たちが先生を「見る」＝能動 → Seeing。③Saw（過去形）は動詞なので、接続詞なしで主節の動詞 became と並べられない。",
+"①分詞構文の主語は主節の主語 this magazine。②雑誌は「書かれている」＝受動 → (Being) written の Being が省略されて Written。③Writing だと「雑誌が書いている」ことになる。",
+"①もとの文は As I was tired, … 。②接続詞 As と主語 I を消し、was を分詞にすると Being。③Been（過去分詞）だけでは分詞構文にならない。",
+"①主節の主語 the island が分詞構文の意味上の主語。②島は（人に）「見られる」→ 受動 → (Being) Seen。③日本語で「見ると」と訳すので Seeing と間違えやすい。訳ではなく主語との関係で判断しよう。",
+"①文末の分詞構文は「～しながら」（付帯状況）が多い。②彼女が手を「振る」＝能動 → waving。③つづり：wave は e で終わるので e を取って -ing。",
+"①Walking along the beach は「浜辺を歩いているとき」。②もとの文は進行形 was walking なので「～している間に」の while が合う。③If（もし～なら）、Though（～だけれども）では意味が通らない。",
+"①Turning left at the corner は「角を左に曲がれば」。②主節が you'll find（未来）なので、まだ起きていないこと＝条件 → If。③主節が未来や命令文なら、分詞構文は「条件」で訳すことが多い。"],
+"9d":[
+"①As he was sick の接続詞 As と主語 he を消す。②was → Being。③Being sick, he stayed home.「病気だったので、彼は家にいた」（理由）。",
+"①and arrived の and を消し、arrived を現在分詞 arriving にする。②「9時に東京を出発し、（そして）正午に大阪に着いた」＝連続の付帯状況。③文末にカンマ＋分詞を置く。",
+"①When it is seen … の接続詞と主語 it を消す。②is seen → Being seen → Being を省略して Seen。③「丘から見ると、町は美しく見える」。",
+"①be located（位置している）は受動の形。②As it is located … → (Being) Located … 。③語順：Located → in → the center → of → the park。<br>located は「位置する」と訳すが形は過去分詞。",
+"①文末に付帯状況「～しながら」を置く。②listen to music の listen を -ing に → listening to music。③listen は自動詞なので to を忘れずに。",
+"①主節の主語は the town。②町は（人に）「見られる」側 → Seen が正しい。③Seeing だと「町が丘から何かを見ている」という意味になる。"],
+"9e":[
+"①もとの文：As I didn't know what to say, … 。②否定の分詞構文は分詞の前に not → Not knowing。③what to say「何と言えばよいか」は know の目的語。",
+"①もとの文：As I didn't have enough money, … 。②didn't have → Not having。③ここでの have は「持っている」の意味なので、having は完了形ではない。",
+"①宿題を終えた → テレビを見た、の順なので「終えた」が前。②主節より前のことは Having ＋過去分詞。③Finished だけだと「宿題が終えられた」という受動の意味になってしまう。<br>補足：前後関係が明らかなら Finishing … も使われるが、完了形のほうが意味がはっきりする。",
+"①「以前に見たことがあった」（経験）は、主節 knew（知っていた）より前のこと。②→ Having seen。③Seen だと「映画が見られる」の意味になる。",
+"①完了形の否定は Not having ＋過去分詞。②Having not been は✕。Not being は「～でないので」となり、「一度も行ったことがない」という経験を表せない。<br>never を使って Never having been / Having never been abroad も可。",
+"①with ＋名詞＋分詞「名詞が～の状態で」。②目は「閉じられている」→ closed（shut も可）。③with を入れ忘れると文が成立しない。",
+"①with ＋名詞＋分詞。②髪は風で自分から「なびいている」→ 現在分詞 flying。③fly - flew - flown。flown だと「髪が飛ばされた」となり不自然。",
+"①「～しに行く」＝ go ＋ ～ing。②Let's のあとは動詞の原形なので go fishing。<br>類例：go camping / go skiing / go swimming / go shopping。",
+"①be busy ＋ ～ing「～するのに忙しい」。②「夕食の準備をする」＝ prepare〔make / cook〕dinner → preparing。<br>注意：✕ be busy to prepare。",
+"①spend ＋時間＋ ～ing「～して時間を過ごす」。②過去の話なので spend → spent（spend - spent - spent）。③play → playing。",
+"①There ＋ be ＋名詞＋ ～ing「～している（名詞）がいる」。②some boys は複数で過去の話なので were。③play soccer → playing soccer。"],
+"9f":[
+"①Because I had lived … の had lived は過去完了で、主節 knew より前のこと。②→ Having lived。③Living だと主節と同じ時になり、意味がずれる。",
+"①could not find ＝ was not able to find。②接続詞・主語を消し、was を Being に、not を前へ → Not being able to find。③can / could は分詞にできないので be able to に言いかえるのがポイント。",
+"①「食べていなかった」は「おなかがすいていた」より前 → 完了形。②否定なので Not having eaten。③目的語 breakfast は分詞のあと。",
+"①接続詞 while を残すと「～している間に」の意味がはっきりする。②While (I was) studying … の I was が省略された形。③語順：While → studying → in → the library。",
+"①「わからなかったので」は否定の理由 → Not knowing。②「何をすべきか」＝ what to do。③「人に助けを求める」＝ ask ＋人＋ for help。過去なので asked。<br>別解：Not knowing what to do, I asked my teacher to help me."],
+"9g":[
+"①with ＋名詞＋分詞。②腕は「組まれる」もの → folded。③原形 fold のままでは with ＋名詞＋分詞の形にならない。",
+"①There ＋ be ＋名詞＋ ～ing。②wait のままだと were と wait の2つの動詞が並んでしまう → waiting。",
+"①夕食を終えてから散歩した → 夕食を終えたのが前 → Having finished。②Finished dinner は「夕食が終えられる」となり意味が通らない。",
+"①前半 The man sat on the bench で文が完成している。②後ろに動詞を続けるなら、接続詞 and を入れるか分詞構文にする → reading（～しながら）。③read は過去形も同じつづりなので見落としやすい。",
+"①接続詞 While と主語 she を消す。②was walking → Walking。③接続詞を残して While walking in the park, … としてもよい。",
+"①have ＋ O ＋過去分詞「～してもらう」。②O ＝ his car、「修理される」→ repaired / fixed。③過去なので had。get を使っても可。",
+null,
+"①Arriving at the station「駅に着くと」（時）。②see ＋ O ＋ ～ing「O が～しているのを見る」→ his grandfather waving his hand。③全体：「駅に着くと、彼は祖父が手を振っているのが見えた」。",
+"①「わからなかったので」→ 否定の分詞構文 Not knowing。②「何をすればいいか」＝ what to do。③主節の主語 Ken と同じなので分詞構文にできる。",
+"①Having worked は完了形 → felt（感じた）より前のこと。②一日中働いた「ので」疲れた、という理由の関係。③If や Though では意味が通らない。",
+"①第1段落：fishing は with his grandfather（祖父と一緒）なので1つ目は✕。②第2段落：he spent the whole afternoon picking tomatoes → 2つ目が○。③祖母は Why don't you help me in the field? と助言しているので3つ目は✕。"],
+"10a":[
+"①than があるので比較級 older。②具体的な差 three years は比較級の直前。③than I (am) の am は省略されている。口語では than me も使われる。",
+"①比較級を強めるのは much / far / a lot。②very は原級（very heavy）を強める語で、比較級には使えない。③more heavier は比較級を重ねていて✕。",
+"①差が小さいときは a little / a bit。②a few は数えられる名詞の数（a few books）に使う。③little だけだと「ほとんど～ない」という否定の意味になる。",
+"①「～ほど…でない」＝ less ＋原級＋ than。②more interesting だと「より面白い」で逆の意味。③fewer は数えられる名詞の「数が少ない」に使う。",
+"①比較級 and 比較級で「だんだん…」。②dark → darker。③get ＋形容詞で「～になる」。It は明暗を表す主語。",
+"①popular は3音節の語なので more popular。②「ますます人気に」は more and more popular。③✕ more popular and more popular。",
+"①the ＋比較級 ～, the ＋比較級 … 。②前半は The more you practice、後半は the better you'll become。③good / well の比較級は better。",
+"①後半も〈the ＋比較級＋ S ＋ V〉の形。②cold → colder。③it は寒暖を表す主語。"],
+"10b":[
+"①差 100 meters を比較級の前に置く。②塔なら tall / high どちらも可 → taller / higher than。③about「約」は数字の前。",
+"①less ＋原級＋ than ≒ not as〔so〕＋原級＋ as。②Ken is not as tall as Tom.「ケンはトムほど背が高くない」。",
+"①get ＋比較級 and 比較級で「だんだん～になっていく」。②進行形 is getting で「～になりつつある」。③good の比較級 better を使う。",
+"①後半も the ＋比較級＋ S ＋ V。②the more（より多く）→ I liked her（主語＋動詞＋目的語）の順。",
+"①「より多くの本を読む」は〈the more books〉をひとかたまりで文頭に。②そのあとに S ＋ V（you read）。③✕ The more you read books。",
+"①less のあとは原級。②easier は比較級なので easy に直す。",
+"①比較級を強めるのは much / far / a lot。②very は原級を強める語なので使えない。"],
+"10c":[
+"①3倍以上は〈数＋ times〉。②three times as large as ～「～の3倍の広さ」。③倍数は最初の as の前。",
+"①「半分」＝ half。②half as big as yours。③yours ＝ your dog。",
+"①分数は〈分子（数）＋分母（序数）〉。②3分の1＝ one third / a third。③3分の2なら two-thirds（分母に -s）。",
+"①2倍は twice（two times も使われるが twice が一般的）。②books は数えられる名詞 → as many books as。③as I do の do は have books の代わり（代動詞）。",
+"①比較級＋ than any other ＋単数名詞。②「他のどの生徒よりも」＝ than any other student。③other を入れ忘れるとエミ自身も比較の対象に入ってしまう。",
+"①No other ＋単数名詞＋比較級＋ than A「A より…な～はない」。②fast → faster。",
+"①「～ほど…なものはない」＝ Nothing is ＋比較級＋ than A。②important は more important。③原級なら Nothing is as important as health.",
+"①最上級を強めるのは by far / much（the の前）。②very は the very best のように the のあとに置く。③more the best は✕。",
+"①「X番目に」＝ the ＋序数詞＋最上級。②two（基数）や twice（2倍）ではなく second（序数）。",
+"①very は最上級を強めるとき the のあとに置く → the very best。②much / far は the の前に置く語（much the best / by far the best）。"],
+"10d":[
+"①比較級（larger）＋ than ＋ any other ＋単数名詞（city）。②語順：larger → than → any → other。",
+"①倍数（twice）＋ as ＋原級（long）＋ as。②about は倍数の前に置いて「約2倍」。",
+"①the ＋序数詞（third）＋最上級（largest）＋名詞（country）。",
+"①分数（a third）＋ as many ＋名詞（books）＋ as。②only は「～しか」。",
+"①any other のあとは単数名詞。②students → student。",
+"①倍数・分数は最初の as の前 → half as expensive as。②as half expensive as は語順の誤り。",
+"①最上級 → 原級：No other ＋単数名詞 … as ＋原級＋ as A。②runner を使って No other runner in our class is as fast as Bob.",
+"①最上級 → 比較級：No other ＋単数名詞 … 比較級＋ than A。②No other runner in our class is faster than Bob.",
+"①Nothing is ＋比較級＋ than A。②precious / valuable は長い語なので more ～。③Time is more precious than anything else. も同じ意味。"],
+"10e":[
+"①最上級 the highest → 比較級 higher than any other ＋単数名詞。②mountain は単数のまま。",
+"①副詞の最上級 the earliest → earlier than any other student。②early の比較級は y を i に変えて earlier。",
+"①4分の1＝ a quarter / a〔one〕fourth。②as many CDs as の前に置く。",
+"①by far / much は〈the ＋最上級〉の前。②She is by far the most famous actor in Japan.",
+null,
+"①The ＋比較級＋ S ＋ V, the ＋比較級＋ S ＋ V。②「高く登る」＝ climb higher → The higher you climb、「空気が薄くなる」＝ the air becomes thinner → the thinner the air becomes。③you は「（一般の）人」を表す。",
+"①No other ＋単数名詞 … as ＋原級＋ as A「A ほど…な～はない」。②直訳：「世界の他のどの山もエベレストほど有名ではない」。③つまり「エベレストは世界でいちばん有名な山だ」という最上級の意味。",
+"①直前の文：ゴミが毎年増えている。②→ 状況は「ますます悪く」なっている。③bad - worse - worst。",
+"①1つ目：本文に more than twice as high とあるので less than は✕。②2つ目：more and more people try to climb とあるので Fewer は✕。③3つ目：最終文と一致。"],
+"ra":[
+"①find oneself ～ing「気がつくと～していた」。②自分が「横になっている」→ 現在分詞。③lie は ie を y に変えて lying。",
+"①have ＋ O ＋過去分詞「O を～してもらう」。②家は「塗られる」→ painted。",
+"①比較級 and 比較級。②high → higher。③物価は expensive ではなく high / low で表す。",
+"①差（ten minutes）＋比較級＋ than。②early の比較級は earlier（y を i に変えて -er）。",
+"①the ＋比較級 ～, the ＋比較級 … 。②前半・後半とも the earlier。",
+"①less ＋原級＋ than。②not as difficult as と同じ意味。"],
+"rb":[
+"①When it is seen → (Being) Seen。②the city は「見られる」側なので過去分詞。",
+"①hadn't read は過去完了の否定 → Not having read。②read の過去分詞は read（発音は [red]）。",
+"①and said → saying（連続の付帯状況）。②She called me, saying she would be late.「彼女は電話をしてきて、遅れると言った」。",
+"①最上級 → No other ＋単数名詞＋比較級＋ than A。②tall → taller。"],
+"rc":[
+"①「X番目に…」＝ the ＋序数詞＋最上級。②taller → tallest。",
+"①stand ＋現在分詞「～しながら立っている」。②do nothing → doing nothing「何もしないで」。",
+"①最上級を強める by far は the の前。②very を使うなら the very easiest の形になる。by far と very は同時に使えないので very が不要。",
+"①with ＋名詞＋分詞。②涙は自分で「流れる」→ running。③with tears running down her face「涙が顔を流れ落ちる状態で」。",
+"①予報を見た → 傘を忘れなかった、の順 → Having watched。②watching は不要。③主節は he didn't forget the umbrella。"],
+"rd":[
+"①As he doesn't have a car → Not having a car。②主節は現在の習慣なので goes。③「自転車で」＝ by bike（a や the をつけない）。",
+"①This town has ～「この町には～がいる」。②twice as many people as our town (has)。③ours（＝ our town）でも可。",
+"①the ＋序数詞（second）＋最上級（longest）＋ river。②「何ですか」＝ What is ～?",
+"①be busy ＋ ～ing。②過去なので was。③「一日中」＝ all day。"]
+};
+
+/* ===== 状態 ===== */
+let ST={};
+try{ST=JSON.parse(localStorage.getItem("gram9-10")||"{}")||{}}catch(e){ST={}}
+function save(){try{localStorage.setItem("gram9-10",JSON.stringify(ST))}catch(e){}}
+
+const norm=s=>(s||"").toLowerCase().replace(/[’‘`]/g,"'").replace(/\s+/g," ").trim();
+const normS=s=>norm(s).replace(/\s*([,.?!])\s*/g," $1 ").replace(/[.?!]/g,"").replace(/\s+/g," ").trim();
+function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function shuffle(a,seed){a=a.slice();let x=seed;for(let i=a.length-1;i>0;i--){x=(x*9301+49297)%233280;const j=Math.floor(x/233280*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+const TYPE={choice:"選択",fill:"空所補充",order:"並べ換え",fix:"誤り訂正",write:"英作文・和訳"};
+
+function el(tag,cls,html){const e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e}
+
+function render(boxId){
+  const box=document.getElementById(boxId);box.innerHTML="";
+  DATA[boxId].forEach(sec=>{
+    const S=el("section","drill-sec");
+    const bar=el("div","sec-bar",`<h3>${sec.sec}</h3><span class="lvl">${sec.lvl}</span><span class="score">正解 <b data-sn="${sec.id}">0</b> / <span data-sd="${sec.id}">0</span></span>`);
+    const rb=el("button","btn sub reset","やり直す");rb.onclick=()=>{sec.items.forEach((it,i)=>delete ST[sec.id+"-"+i]);save();render(boxId);updateAll()};
+    bar.appendChild(rb);S.appendChild(bar);
+    S.appendChild(el("div","pbar",`<i data-pb="${sec.id}"></i>`));
+    let n=0;
+    sec.items.forEach((it,i)=>{
+      const qid=sec.id+"-"+i;
+      if(it.type==="passage"){S.appendChild(el("div","passage",`<h5>${it.t}</h5>${it.h}`));return}
+      n++;S.appendChild(buildQ(it,qid,n));
+    });
+    box.appendChild(S);
+  });
+}
+
+function setResult(card,qid,ok,html){
+  card.classList.remove("ok","ng");card.classList.add(ok?"ok":"ng");
+  const fb=card.querySelector(".fb");fb.classList.add("on");
+  fb.innerHTML=`<div class="verdict">${ok?"◎ 正解！":"✕ 不正解"}</div>${html}`;
+  ST[qid]=ok?"ok":"ng";save();updateAll();
+}
+
+function buildQ(it,qid,n){
+  const card=el("div","q");
+  const top=el("div","q-top");top.appendChild(el("div","qn",n));
+  const body=el("div","q-body");top.appendChild(body);card.appendChild(top);
+  body.appendChild(el("div","qtype",TYPE[it.type]+(it.extra?"（不要語あり）":"")));
+  if(it.jp)body.appendChild(el("div","jp",it.jp));
+  const acts=el("div","actions");const fb=el("div","fb");
+  const done=ST[qid];
+  const [sid,ix]=[qid.slice(0,qid.lastIndexOf("-")),+qid.slice(qid.lastIndexOf("-")+1)];
+  const hint=(HINTS[sid]||[])[ix];
+  const hbox=el("div","hint-box",hint?"<b>💡 ヒント：</b>"+hint:"");
+  const hbtn=()=>{const b=el("button","btn hintbtn","💡 ヒント");b.onclick=()=>{hbox.classList.toggle("on");b.textContent=hbox.classList.contains("on")?"💡 ヒントを閉じる":"💡 ヒント"};return b};
+  const det=(EXP[sid]||[])[ix];
+  const detHTML=det?`<div class="exp2"><div class="exp2-h">📘 くわしい解説</div>${det.replace(/([②③④])/g,"<br>$1")}</div>`:"";
+  const expHTML=(ans)=>`<div class="ans">${ans}</div><div class="exp">${it.e||""}</div>${detHTML}`;
+
+  if(it.type==="choice"){
+    if(it.s!=="___")body.appendChild(el("div","sent en",esc(it.s).replace("___","（　　　　）")));
+    const opts=el("div","opts");
+    it.o.forEach((o,k)=>{const b=el("button","opt",esc(o));b.onclick=()=>{
+      opts.querySelectorAll(".opt").forEach((x,j)=>{x.disabled=true;if(j===it.a)x.classList.add(j===k?"good":"reveal")});
+      if(k!==it.a)b.classList.add("bad");
+      const full=it.s==="___"?it.o[it.a]:it.s.replace("___",it.o[it.a]);
+      setResult(card,qid,k===it.a,expHTML("答え："+esc(full)));
+    };opts.appendChild(b)});
+    body.appendChild(opts);
+    if(hint){acts.append(hbtn());body.appendChild(acts)}
+  }
+
+  if(it.type==="fill"){
+    const parts=it.s.split("___");const sent=el("div","sent en");const ins=[];
+    parts.forEach((p,k)=>{sent.appendChild(document.createTextNode(p));if(k<parts.length-1){const inp=el("input");inp.setAttribute("autocapitalize","off");inp.setAttribute("autocomplete","off");inp.spellcheck=false;inp.addEventListener("keydown",e=>{if(e.key==="Enter")chk.click()});ins.push(inp);sent.appendChild(inp)}});
+    body.appendChild(sent);
+    if(it.g)body.appendChild(el("div","given",`〈 <span class="en">${it.g}</span> 〉を適当な形に変えて`));
+    const chk=el("button","btn","答え合わせ");
+    chk.onclick=()=>{let all=true;ins.forEach((inp,k)=>{const good=it.a[k].map(norm).includes(norm(inp.value));inp.classList.toggle("good",good);inp.classList.toggle("bad",!good);all=all&&good});
+      let k=0;const full=it.s.replace(/___/g,()=>{const w=it.a[k++][0];return"<u>"+w+"</u>"});
+      setResult(card,qid,all,expHTML("答え："+full.replace(/^<u>(.)/,(m,c)=>"<u>"+c.toUpperCase())));};
+    const sh=el("button","btn sub","答えを見る");sh.onclick=()=>{ins.forEach((inp,k)=>{if(!inp.value)inp.value=it.a[k][0]});chk.click()};
+    acts.append(chk,sh);if(hint)acts.append(hbtn());body.appendChild(acts);
+  }
+
+  if(it.type==="order"){
+    const frame=el("div","sent");
+    if(it.pre)frame.appendChild(el("span","ord-frame en",esc(it.pre)));
+    const zone=el("div","ord-zone empty");
+    const chips=el("div","chips");
+    const order=shuffle(it.c.map((c,k)=>k),qid.length*97+n*31+7);
+    const picked=[];
+    const refresh=()=>{zone.classList.toggle("empty",!zone.children.length)};
+    order.forEach(k=>{const c=el("button","chip en",esc(it.c[k]));c.dataset.k=k;c.onclick=()=>{
+      if(c.parentNode===chips){zone.appendChild(c)}else{chips.appendChild(c)}refresh()};chips.appendChild(c)});
+    body.appendChild(frame);
+    body.appendChild(zone);
+    if(it.post&&it.post.length>1)body.appendChild(el("div","ord-frame en","… "+esc(it.post)));
+    body.appendChild(chips);
+    const chk=el("button","btn","答え合わせ");
+    chk.onclick=()=>{const ans=[...zone.children].map(c=>c.textContent).join(" ");
+      const ok=it.a.map(normS).includes(normS(ans));
+      const full=((it.pre?it.pre+" ":"")+it.a[0]+(it.post?" "+it.post:"")).replace(/ ([,.?])/g,"$1").replace(/ , /g,", ");
+      const fixed=full.charAt(0).toUpperCase()+full.slice(1);
+      setResult(card,qid,ok,expHTML("答え："+esc(fixed.replace(/\bi\b/g,"I"))));};
+    const clr=el("button","btn sub","リセット");clr.onclick=()=>{[...zone.children].forEach(c=>chips.appendChild(c));refresh()};
+    acts.append(chk,clr);if(hint)acts.append(hbtn());body.appendChild(acts);
+  }
+
+  if(it.type==="fix"){
+    body.appendChild(el("div","given","① 誤りのある語をタップ → ② 正しく直して入力"));
+    const words=el("div","words");const toks=it.s.split(" ");let sel=-1;
+    toks.forEach((t,k)=>{const w=el("span","word",esc(t));w.onclick=()=>{words.querySelectorAll(".word").forEach(x=>x.classList.remove("sel"));w.classList.add("sel");sel=k};words.appendChild(w)});
+    body.appendChild(words);
+    const fi=el("div","fix-in","正しい形：");const inp=el("input");inp.setAttribute("autocapitalize","off");inp.spellcheck=false;fi.appendChild(inp);body.appendChild(fi);
+    const chk=el("button","btn","答え合わせ");
+    chk.onclick=()=>{const strip=s=>norm(s).replace(/[.,?!]/g,"");const W=[].concat(it.w);const ok=W.includes(sel)&&it.a.map(strip).includes(strip(inp.value));
+      words.querySelectorAll(".word").forEach((x,k)=>{x.classList.remove("sel","wrongpos","rightpos");if(W.includes(k))x.classList.add("rightpos");else if(k===sel)x.classList.add("wrongpos")});
+      setResult(card,qid,ok,expHTML(`誤り：<s>${esc(W.map(k=>toks[k]).join(" "))}</s> → ${esc(it.a[0])}<br>正しい文：${esc(it.full)}`));};
+    const sh=el("button","btn sub","答えを見る");sh.onclick=()=>{sel=[].concat(it.w)[0];inp.value=it.a[0];chk.click()};
+    acts.append(chk,sh);if(hint)acts.append(hbtn());body.appendChild(acts);
+  }
+
+  if(it.type==="write"){
+    const ta=el("textarea","w");ta.placeholder="ここに書いてみよう";body.appendChild(ta);
+    const sh=el("button","btn","模範解答を見る");
+    sh.onclick=()=>{fb.classList.add("on");fb.innerHTML=`<div class="ans">${it.m.map(esc).join("<br>")}</div><div class="exp">${it.e||""}</div>${detHTML}<div class="actions"><button class="btn okb" data-r="1">できた</button><button class="btn ngb" data-r="0">まだ</button></div><div class="exp" style="font-size:.8rem">模範解答と比べて自己採点しよう（別の表現でも意味と文法が正しければOK）。</div>`;
+      fb.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{const ok=b.dataset.r==="1";card.classList.remove("ok","ng");card.classList.add(ok?"ok":"ng");ST[qid]=ok?"ok":"ng";save();updateAll()})};
+    acts.append(sh);if(hint)acts.append(hbtn());body.appendChild(acts);
+    if(done){card.classList.add(done)}
+  }
+  body.appendChild(hbox);body.appendChild(fb);
+  if(done&&it.type!=="write"){card.classList.add(done);fb.classList.add("on");fb.innerHTML=`<div class="verdict">${done==="ok"?"◎ 前回は正解":"✕ 前回は不正解"}</div><div class="exp">もう一度解き直せます。</div>`}
+  return card;
+}
+
+function updateAll(){
+  let N=0,D=0;
+  Object.values(DATA).flat().forEach(sec=>{
+    let n=0,d=0;sec.items.forEach((it,i)=>{if(it.type==="passage")return;d++;if(ST[sec.id+"-"+i]==="ok")n++});
+    N+=n;D+=d;
+    document.querySelectorAll(`[data-sn="${sec.id}"]`).forEach(x=>x.textContent=n);
+    document.querySelectorAll(`[data-sd="${sec.id}"]`).forEach(x=>x.textContent=d);
+    document.querySelectorAll(`[data-pb="${sec.id}"]`).forEach(x=>x.style.width=(d?n/d*100:0)+"%");
+  });
+  document.getElementById("ovNum").textContent=N;document.getElementById("ovDen").textContent=D;
+}
+
+/* ===== 画面切り替え ===== */
+const VIEWS=["l9-text","l9-drill","l10-text","l10-drill","review"];
+function show(){
+  let v=(location.hash||"").slice(1);if(!VIEWS.includes(v))v="l9-text";
+  document.querySelectorAll(".view").forEach(x=>x.classList.toggle("on",x.id==="v-"+v));
+  document.querySelectorAll("#tabs a").forEach(a=>a.classList.toggle("on",a.dataset.v===v));
+  const acc=document.getElementById("v-"+v).dataset.accent;
+  const r=document.documentElement.style;
+  r.setProperty("--accent",`var(--${acc})`);r.setProperty("--accent-soft",`var(--${acc}-soft)`);
+  window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",show);
+document.querySelectorAll("[data-jump]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();const t=document.getElementById(a.dataset.jump);if(t)window.scrollTo({top:t.getBoundingClientRect().top+scrollY-110,behavior:"smooth"})}));
+document.querySelectorAll(".ex li").forEach(li=>li.addEventListener("click",()=>li.classList.toggle("open")));
+["l9-box","l10-box","rev-box"].forEach(render);
+/* ===== アプリ（PWA） ===== */
+if("serviceWorker" in navigator && (location.protocol==="https:"||location.hostname==="localhost")){
+  window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+}
+let deferredPrompt=null;const ib=document.getElementById("installBtn");
+window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;ib.classList.add("on")});
+ib.addEventListener("click",async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();try{await deferredPrompt.userChoice}catch(e){}deferredPrompt=null;ib.classList.remove("on")});
+window.addEventListener("appinstalled",()=>ib.classList.remove("on"));
+updateAll();show();
+</script>
+</body>
+</html>
